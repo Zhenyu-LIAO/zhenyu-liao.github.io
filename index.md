@@ -1,7 +1,7 @@
 ---
 layout: frontpage
-title: Karl Broman
-description: Karl Broman is Professor in Biostatistics and Medical Informatics at University of Wisconsin - Madison; research in statistical genetics
+title: Zhenyu LIAO
+description: Zhenyu LIAO is
 keywords: Broman, QTL, R/qtl, quantitative trait loci, statistics, statistical genetics, recombination
 ---
 
