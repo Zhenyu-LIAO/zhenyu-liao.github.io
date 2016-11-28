@@ -1,0 +1,144 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Weekly Timetable Calendar
+% LaTeX Template
+% Version 1.1 (4/6/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original calendar style author:
+% Evan Sultanik (http://www.sultanik.com/LaTeX_calendar_style)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the calendar.sty file to be in the same directory as the
+% .tex file. The calendar.sty file provides the necessary structure to create the
+% calendar.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[landscape,a4paper]{article}
+
+\usepackage{calendar} % Use the calendar.sty style
+
+\usepackage[landscape,margin=0.5in]{geometry}
+
+\begin{document}
+
+\pagestyle{empty} % Removes the page number from the bottom of the page
+
+\noindent
+
+\StartingDayNumber=1 % Calendar starting day, default of 1 means Sunday, 2 for Monday, etc
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{center}
+\textsc{\LARGE Title}\\ % Title text
+\textsc{\large Subtitle} % Subtitle text
+\end{center}
+
+%----------------------------------------------------------------------------------------
+
+\begin{calendar}{\hsize}
+
+%----------------------------------------------------------------------------------------
+%	FIRST DAY
+%----------------------------------------------------------------------------------------
+
+\day{}{\textbf{9am-5pm} \daysep Work at McDonald's} % By default all daily events are centered in the box, in order to bring them up use \vspace{2cm} after the event text; you may need to change the 2cm
+
+%----------------------------------------------------------------------------------------
+%	SECOND DAY
+%----------------------------------------------------------------------------------------
+
+\day{}{
+\textbf{9am-10am} \daysep BIOSCI101 - BLT100 \\[3pt]
+\textbf{10am-11am} \daysep BIOSCI 104 - LLT \\[3pt]
+%\textbf{11am-12pm} \daysep No Lecture \\[3pt]
+\textbf{12pm-1pm} \daysep BIOSCI105 - BLT204 \\[3pt]
+%\textbf{1pm-2pm} \daysep No Lecture \\[3pt]
+\textbf{2pm-5pm} \daysep BIOSCI101 Laboratory \\[3pt]
+%\textbf{3pm-4pm} \daysep BIOSCI101 Laboratory \\[3pt]
+%\textbf{4pm-5pm} \daysep BIOSCI101 Laboratory
+} 
+
+%----------------------------------------------------------------------------------------
+%	THIRD DAY
+%----------------------------------------------------------------------------------------
+
+\day{}{ % Tuesday
+\textbf{9am-10am} \daysep BIOSCI101 - BLT100 \\[3pt]
+\textbf{10am-11am} \daysep BIOSCI 104 - LLT \\[3pt]
+%\textbf{11am-12pm} \daysep No Lecture \\[3pt]
+%\textbf{12pm-1pm} \daysep No Lecture \\[3pt]
+%\textbf{1pm-2pm} \daysep No Lecture \\[3pt]
+\textbf{2pm-3pm} \daysep GEO101 - HSB1 \\[3pt]
+%\textbf{3pm-4pm} \daysep No Lecture \\[3pt]
+%\textbf{4pm-5pm} \daysep No Lecture
+} 
+
+%----------------------------------------------------------------------------------------
+%	FOURTH DAY
+%----------------------------------------------------------------------------------------
+
+\day{}{ % Wednesday
+%\textbf{9am-10am} \daysep No Lecture \\[3pt]
+\textbf{10am-11am} \daysep BIOSCI 104 - LLT \\[3pt]
+%\textbf{11am-12pm} \daysep No Lecture \\[3pt]
+\textbf{12pm-1pm} \daysep BIOSCI105 - BLT204 \\[3pt]
+%\textbf{1pm-2pm} \daysep No Lecture \\[3pt]
+\textbf{2pm-3pm} \daysep GEO101 - HSB1 \\[3pt]
+%\textbf{3pm-4pm} \daysep No Lecture \\[3pt]
+%\textbf{4pm-5pm} \daysep No Lecture
+} 
+
+%----------------------------------------------------------------------------------------
+%	FIFTH DAY
+%----------------------------------------------------------------------------------------
+
+\day{}{ % Thursday
+%\textbf{9am-10am} \daysep No Lecture \\[3pt]
+\textbf{10am-11am} \daysep BIOSCI 104 - LLT \\[3pt]
+%\textbf{11am-12pm} \daysep No Lecture \\[3pt]
+%\textbf{12pm-1pm} \daysep No Lecture \\[3pt]
+%\textbf{1pm-2pm} \daysep No Lecture \\[3pt]
+\textbf{2pm-3pm} \daysep GEO101 - HSB1 \\[3pt]
+%\textbf{3pm-4pm} \daysep No Lecture \\[3pt]
+%\textbf{4pm-5pm} \daysep No Lecture
+} 
+
+%----------------------------------------------------------------------------------------
+%	SIXTH DAY
+%----------------------------------------------------------------------------------------
+
+\day{}{ % Friday
+\textbf{9am-10am} \daysep BIOSCI101 - BLT100 \\[3pt]
+\textbf{10am-11am} \daysep BIOSCI 104 - LLT \\[3pt]
+%\textbf{11am-12pm} \daysep No Lecture \\[3pt]
+\textbf{12pm-1pm} \daysep BIOSCI105 - BLT204 \\[3pt]
+%\textbf{1pm-2pm} \daysep No Lecture \\[3pt]
+%\textbf{2pm-3pm} \daysep No Lecture \\[3pt]
+\textbf{3pm-4pm} \daysep GEO101 Tutorial \\ Room A \\[3pt]
+%\textbf{4pm-5pm} \daysep No Lecture
+} 
+
+%----------------------------------------------------------------------------------------
+%	SEVENTH DAY
+%----------------------------------------------------------------------------------------
+
+\day{}{} % Saturday
+
+%----------------------------------------------------------------------------------------
+ 
+\finishCalendar
+\end{calendar}
+\end{document}

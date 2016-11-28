@@ -1,0 +1,7 @@
+\contentsline {chapter}{\numberline {1}A beginner of Latex}{2}
+\contentsline {section}{\numberline {1.1}this is the first section of chapter 1}{2}
+\contentsline {subsection}{\numberline {1.1.1}this is the subsection 1.1.1 of this document}{2}
+\contentsline {subsubsection}{this is a subsubsection example}{2}
+\contentsline {paragraph}{this is an example of paragraph}{2}
+\contentsline {subparagraph}{this is an example of subparagraph}{2}
+\contentsline {chapter}{\numberline {2}It is not that difficult actually}{3}

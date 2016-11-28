@@ -1,0 +1,329 @@
+\documentclass[10pt]{beamer}
+%\documentclass[10pt,notes=show]{beamer}
+%\documentclass[10pt,handout,english,notes=show]{beamer}
+\usepackage[english]{babel} %possibile for french if needed
+%\usepackage{etex}
+%\usepackage{pgfpages}
+\usepackage{color,hyperref}
+\usepackage{graphicx}
+%\usepackage{longtable}
+
+%\usepackage{pifont}
+\usepackage{amsmath}
+\usepackage{stmaryrd}
+\usepackage{amsthm}
+\usepackage[utf8]{inputenc}
+%use for checkmark,etc
+\usepackage{pifont}
+%usepackage{tikz,pgfplots}
+%\usetikzlibrary{spy}
+%\usepackage[backend=biber,style=numeric-comp,sorting=none]{biblatex}
+%\addbibresource{biblio.bib}
+
+
+%\setbeamerfont{title}{family=\rm}
+
+\mode<presentation>
+{
+  \setbeamertemplate{footline}[frame number]{}
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{frametitle continuation}{\frametitle{}}
+  \usefonttheme[onlymath]{serif}
+  \usetheme{default}
+  \usecolortheme{beaver}
+  \setbeamercovered{transparent}
+}
+
+
+% title information
+\title[Crisis] % (optional, only for long titles)
+{The Economics of Financial Crisis}
+\subtitle{Evidence from India}
+\author[Author, Anders] % (optional, for multiple authors)
+{F.~Author\inst{1} \and S.~Anders\inst{2}}
+\institute[Universities Here and There] % (optional)
+{
+  \inst{1}%
+  Institute of Computer Science\\
+  University Here
+  \and
+  \inst{2}%
+  Institute of Theoretical Philosophy\\
+  University There
+}
+\date[KPT 2004] % (optional)
+{Conference on Presentation Techniques, 2004}
+\subject{Computer Science}
+
+
+
+% main document
+\begin{document}
+
+%% PDF settings
+\hypersetup{pdfstartview={Fit}}
+
+
+
+
+% title page
+\frame{\titlepage}
+\addtocounter{framenumber}{-1}
+
+% TOC
+\begin{frame}
+\frametitle{Table of Contents}
+\tableofcontents[currentsection,currentsubsection]
+\end{frame}
+
+ \AtBeginSection[]
+ {
+   \begin{frame}<beamer>{Outline}
+     \tableofcontents[currentsection,currentsubsection]
+   \end{frame}
+ }
+ \AtBeginSubsection[]
+ {
+   \begin{frame}<beamer>{Outline}
+     \tableofcontents[currentsection,currentsubsection]
+   \end{frame}
+ }
+ \AtBeginSubsubsection[]
+ {
+   \begin{frame}<beamer>{Outline}
+     \tableofcontents[currentsection,currentsubsection]
+   \end{frame}
+ }
+%\beamerdefaultoverlayspecification{<+->}
+
+
+\section[Section]{My section}
+\subsection[Subsection]{My subsection}
+\subsubsection[Subsubsection]{My subsubsection}
+
+\begin{frame}
+    \frametitle{This is the first slide}
+    %Content goes here
+  \end{frame}
+  \begin{frame}
+    \frametitle{This is the second slide}
+    \framesubtitle{A bit more information about this}
+    %More content goes here
+  \end{frame}
+
+\section{Motivation}
+
+\subsection{The Basic Problem That We Studied}
+
+\begin{frame}{Make Titles Informative. Use Uppercase Letters.}{Subtitles are optional.}
+  % - A title should summarize the slide in an understandable fashion
+  %   for anyone how does not follow everything on the slide itself.
+
+  \begin{itemize}
+  \item
+    Use \texttt{itemize} a lot.
+  \item
+    Use very short sentences or short phrases.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Make Titles Informative.}
+
+  You can create overlays\dots
+  \begin{itemize}
+  \item using the \texttt{pause} command:
+    \begin{itemize}
+    \item
+      First item.
+      \pause
+    \item    
+      Second item.
+    \end{itemize}
+  \item
+    using overlay specifications:
+    \begin{itemize}
+    \item<3->
+      First item.
+    \item<4->
+      Second item.
+    \end{itemize}
+  \item
+    using the general \texttt{uncover} command:
+    \begin{itemize}
+      \uncover<5->{\item
+        First item.}
+      \uncover<6->{\item
+        Second item.}
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+%% Some animation
+ \begin{frame}
+\frametitle{Some background}
+We start our discussion with some concepts.
+\pause
+The first concept we introduce originates with Erd\H os.
+\end{frame}
+
+%% Text animation
+\begin{frame}
+\begin{itemize}
+  \item This one is always shown
+  \item<1-> The first time (i.e. as soon as the slide loads)
+  \item<2-> The second time
+  \item<1-> Also the first time
+  \only<1-1> {This one is shown at the first time, but it will hide soon (on the next event after the slide loads).}
+\end{itemize}
+\end{frame}
+%% alternative way
+\begin{frame}
+  \frametitle{`Hidden higher-order concepts?'}
+  \begin{itemize}[<+->]
+  \item The truths of arithmetic which are independent of PA in some 
+  sense themselves `{contain} essentially {\color{blue}{hidden higher-order}},
+   or infinitary, concepts'???
+  \item `Truths in the language of arithmetic which \ldots
+  \item That suggests stronger version of Isaacson's thesis. 
+  \end{itemize}
+\end{frame}
+\note{Here is some note.}
+
+% % Example of \footfullcie
+% \begin{frame}
+%  \frametitle{Title}
+%  A reference~\footfullcite{ref_bib}, with ref_bib an item of the .bib file.
+% \end{frame}
+
+% \begin{frame}[fragile]
+% \frametitle{Source code}
+
+% \begin{lstlisting}[caption=First C example]
+% int main()
+% {
+%     printf("Hello World!");
+%     return 0;
+% }
+% \end{lstlisting}
+% \end{frame}
+
+%%Columns 
+\begin{frame}{Example of columns 1}
+    \begin{columns}[c] % the "c" option specifies center vertical alignment
+    \column{.5\textwidth} % column designated by a command
+     Contents of the first column
+    \column{.5\textwidth}
+     Contents split \\ into two lines
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Example of columns 2}
+     \begin{columns}[T] % contents are top vertically aligned
+     \begin{column}[T]{5cm} % each column can also be its own environment
+     Contents of first column \\ split into two lines
+     \end{column}
+     \begin{column}[T]{5cm} % alternative top-align that's better for graphics
+          \begin{figure}
+          \centering{}\includegraphics[height=3cm]{CONVEX_N-P-SPLITTING.pdf}\caption{Illustration of projection algorithm}
+          \end{figure}
+     \end{column}
+     \end{columns}
+\end{frame}
+
+
+%%Block 
+\begin{frame}
+
+   \begin{block}{This is a Block}
+      This is important information
+   \end{block}
+
+   \begin{alertblock}{This is an Alert block}
+   This is an important alert
+   \end{alertblock}
+
+   \begin{exampleblock}{This is an Example block}
+   This is an example 
+   \end{exampleblock}
+
+\end{frame}
+
+
+\section*{Summary}
+
+\begin{frame}{Summary}
+
+  % Keep the summary *very short*.
+  \begin{itemize}
+  \item
+    The \alert{first main message} of your talk in one or two lines.
+  \item
+    The \alert{second main message} of your talk in one or two lines.
+  \item
+    Perhaps a \alert{third message}, but not more than that.
+  \end{itemize}
+  
+  % The following outlook is optional.
+  \vskip0pt plus.5fill
+  \begin{itemize}
+  \item
+    Outlook
+    \begin{itemize}
+    \item
+      Something you haven't solved.
+    \item
+      Something else you haven't solved.
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+
+
+% All of the following is optional and typically not needed. 
+\appendix
+\section<presentation>*{\appendixname}
+\subsection<presentation>*{For Further Reading}
+
+\begin{frame}[allowframebreaks]
+  \frametitle<presentation>{For Further Reading}
+    
+  \begin{thebibliography}{10}
+    
+  \beamertemplatebookbibitems
+  % Start with overview books.
+
+  \bibitem{Author1990}
+    A.~Author.
+    \newblock {\em Handbook of Everything}.
+    \newblock Some Press, 1990.
+ 
+    
+  \beamertemplatearticlebibitems
+  % Followed by interesting articles. Keep the list short. 
+
+  \bibitem{Someone2000}
+    S.~Someone.
+    \newblock On this and that.
+    \newblock {\em Journal of This and That}, 2(1):50--100,
+    2000.
+  \end{thebibliography}
+\end{frame}
+
+%% Bibliography
+\begin{frame}[allowframebreaks]
+  \frametitle<presentation>{Further Reading}    
+  \begin{thebibliography}{10}    
+  \beamertemplatebookbibitems
+  \bibitem{Autor1990}
+    A.~Autor.
+    \newblock {\em Introduction to Giving Presentations}.
+    \newblock Klein-Verlag, 1990.
+  \beamertemplatearticlebibitems
+  \bibitem{Jemand2000}
+    S.~Jemand.
+    \newblock On this and that.
+    \newblock {\em Journal of This and That}, 2(1):50--100, 2000.
+  \end{thebibliography}
+\end{frame}
+
+\end{document}

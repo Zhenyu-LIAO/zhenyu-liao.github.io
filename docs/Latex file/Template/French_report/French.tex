@@ -1,0 +1,139 @@
+
+\documentclass{report}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage[cyr]{aeguill}
+\usepackage{layout}
+\usepackage{amsmath, amsthm}
+
+\usepackage{graphicx}%allows you to import images
+\usepackage{float}%allows for control of float positions
+
+%header and footer stuff
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[R]{}
+\fancyfoot{}
+\fancyfoot[R]{\thepage} 
+%
+
+\begin{document}
+
+%partie title	
+\begin{titlepage}
+	\begin{center}
+	%\line(1,0){200}\\
+	\Huge{Rapport}\\
+	%\line(1,0){300}\\
+	[1cm]
+	\Large{Titre du rapport}\\
+	[10cm]
+	\end{center}
+	\begin{flushright}
+	\textsc{\large Zhenyu LIAO}\\
+	{CentraleSupélec\\
+	Master 2 Recherche ATSI\\}
+	\end{flushright}
+ \end{titlepage}
+
+%contents
+\tableofcontents
+\thispagestyle{empty}
+\cleardoublepage
+\setcounter{page}{1}
+
+%partie introduction
+\section{Introduction}
+Institute Electronic Fondamental (IEF) \\
+
+\begin{figure}[H]
+\centering
+%%\includegraphics[width=10cm,height=7cm]{/users/mac/desktop/latex/image/lal.jpg}
+\caption[Optional caption]{lal}
+\end{figure}
+
+Le Laboratoire de l'Accélérateur Linéaire (LAL) est une unité mixte de l'IN2P3 du CNRS et de l'Université Paris-Sud (UMR 8607).
+
+L'activité de recherche du LAL est centrée sur la physique des particules, complétée par une forte composante en cosmologie et en astrophysique.
+
+Le laboratoire assure sa mission de transmission des connaissances par des activités d'enseignement et de communication.
+
+Pour réaliser leurs expériences, les physiciens s'appuient sur les différents services techniques et administratifs du laboratoire, et en particulier des services très performants de conception et de réalisation en mécanique et en électronique, ainsi qu'un groupe maîtrisant les technologies de l'information.
+
+L'expérimentation en physique des particules étant souvent associée aux accélérateurs, le laboratoire mène aussi un programme de recherche et développements dans ce domaine.
+
+% partie mission	
+\section{Mission}
+	\subsection{Construction du montage optique}
+	\subsection{Traitement des données et des image}
+	\subsection{Simulation}
+
+%partie cours	
+\section{Cours}	
+	\subsection{calcul et mesure préparatoire}
+	Tout d'abord, J'ai fait plusieurs calcule préparatoire. C'est nécessaire pour le développement d'expérience.
+		\subsubsection{angle de prisme}
+		\begin{figure}[H]
+		\centering
+		%\includegraphics[width=11cm,height=7cm]{/users/mac/desktop/latex/image/1}
+		\caption[Optional caption]{prisme}
+		\end{figure}
+	L'image ci-dessus montre que le chemin d'optique dans une prisme. Il faut trouver la relation entre le grandeur d'angle $\theta$3 et la sensibilité de la variation de $\theta$3. Par le loi de réfraction, On a :
+		\[
+		\frac{\sin\theta}{\sin\theta_1}=1
+		\]
+	L'indice du prisme varie de dn. $\theta$ est inchangé. $\theta_1$, $\theta_2$, $\theta_3$ varient. Donc, on a :
+		\[
+		\frac{\sin\theta}{\sin(\theta+d\theta_1)}=n+dn
+		\]
+	Avec les 2 fonction dessus, on peut obtenir :
+		\[
+		dn\sin\theta_1+n\cos\theta_1d\theta_1=0
+		\]		
+	La même chose, on a :
+		\[
+		\frac{\sin\theta_3}{\sin\theta_2}=1
+		\]
+		\[
+		\frac{\sin\theta_3+d\theta_3}{\sin(\theta_2+d\theta_2)}=n+dn
+		\]
+		Avec les 2 fonction dessus, on peut obtenir :
+		\[
+		dn\sin\theta_2+n\cos\theta_2d\theta_2=\cos\theta_3d\theta_3=0
+		\]	
+		Avec
+		\[
+		d\theta_2+d\theta_3=0,
+		\]
+		on a:
+		\[
+		d\theta_3=dn\frac{\sin\alpha}{\cos\theta_3\cos\theta_1}
+		\]
+		Par la fonction, on trouve qu'il faut $\cos\theta_3\cos\theta_1$ le plus petit pour gagner la meilleur sensibilité.
+		Ici, on met $\sin\theta_3$=x pour obtenir le formule ci dessous :
+		?\begin{equation}\label{eq:test}
+		\cos\theta_3\cos\theta_1=\cos\alpha\sqrt{1-x^2}\sqrt{1-frac{x^2}{n^2}}+\sin\alpha\frac{x}{n}\sqrt{1-x^2}
+		\end{equation}
+		Après, j'ai tracé la graphique de fonction (1) sur Matlab.
+		
+		
+		Sur la graphique, on peut trouver que c'est plus sensibilité si $\theta_3$ est plus grand.
+		
+		\subsubsection{taux de réflaction}
+		Dans la montage d'optique, on a besoin de ajouter un lame. Donc, c'est nécessaire de measurer le taux de réflection de cette lame. Pour ça, j'ai conçu un schéma si-dessous.
+		\begin{figure}[H]
+		\centering
+		%\includegraphics[width=6cm,height=6cm]{/users/mac/desktop/latex/image/2}
+		\caption[Optional caption]{measure de la lame}
+		\end{figure}
+		Avec cette montage, j'ai obtenu le taux de la réflection est 2\%.
+		
+		\subsubsection{diamètre de faisceaux}
+		En suite, il faut observer la variation de la diamètre des faisceaux laser par rapport l'angle sortie de la prisme($\theta_3$). Pour ça, j'ai conçu une montage comme ci-dessous.
+		
+		
+		
+		
+		
+
+\end{document}

@@ -1,0 +1,167 @@
+%
+% As physicist we often submit to physical review journals which have
+% the "revtex" environment as default. I therefore use revtex here.
+% revtex is however very similar to the standard "article" documentclass environment so
+% that there should be no compatibility issues.
+%
+% There are many options you can choose (in [  ] brackets) - see the revtex manual from
+% the american physics society
+%
+\documentclass[aps,pre,preprint,nofootinbib]{revtex4}
+
+% You should use BibTeX and apsrev.bst for references
+% Choosing a journal automatically selects the correct APS
+% BibTeX style file (bst file), so only uncomment the line
+% below if necessary.
+%\bibliographystyle{apsrev} % standard revtex style 
+%\bibliographystyle{plain} % shows titles
+%
+% apsrevlong.bst: Nonstandard style hacked by L. Illing to give journal titles
+% but otherwise conform to apsrev bibliography style.
+% You need to obtain "apsrevlong.bst" from the course webpage or me. 
+% It is not contained in any standard LaTeX distribution.
+\bibliographystyle{apsrevlong}
+
+% If your document is named foo.tex and if you use BibTeX, then you need to invoke
+%   latex foo
+%   bibtex foo
+%   latex foo
+%   latex foo
+% to get the correct document out in the end. You may use 'pdflatex foo' instead of
+% 'latex foo' to obtain a pdf file instead of a dvi file. (Note that in TeXShop PdfTeX is used by default)
+
+%
+% some useful packages
+%
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{graphicx}
+\usepackage{bbm}
+
+
+  % The switch below allows us to put the .pdf figures needed when 'pdflatex' is
+  % used and the .eps figured required when 'latex' is used into different 
+  % directories. The path to these directories is specified here and does not
+  % have to be specified in the text
+  %\ifx\pdfoutput\undefined
+  %    \usepackage{graphicx}
+  %    \graphicspath{{../epsfigs/}}	
+  % \else
+  %    \usepackage[pdftex]{graphicx}
+  %    \graphicspath{{../pdffigs/}}	
+  % \fi
+
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Definitions
+%
+%
+% Define your special symbols here
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% End Definitions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%Title of paper
+\title{title}
+
+
+% Place the author information here.  Please hand-code the contact
+% information and notecalls; do *not* use \footnote commands.  Let the
+% author contact information appear immediately below the author names
+% as shown.  We would also prefer that you don't change the type-size
+% settings shown here.
+
+% repeat the \author .. \affiliation  etc. as needed
+% \email, \thanks, \homepage, \altaffiliation all apply to the current
+% author. Explanatory text should go in the []'s, actual e-mail
+% address or url should go in the {}'s for \email and \homepage.
+% Please use the appropriate macro foreach each type of information
+
+% \affiliation command applies to all authors since the last
+% \affiliation command. The \affiliation command should follow the
+% other information
+% \affiliation can be followed by \email, \homepage, \thanks as well.
+
+\author{You}
+%\affiliation{Department of Physics, Reed College, Portland, Oregon,  97202, USA}
+%\email[]{illing@reed.edu}
+%\homepage[]{Your web page}
+%\thanks{}
+%\altaffiliation{}
+
+\author{Lab Partner: }
+\affiliation{Department of Physics, Reed College, Portland, Oregon,  97202, USA}
+%\email[]{Your e-mail address}
+%\homepage[]{Your web page}
+%\thanks{}
+%\altaffiliation{}
+
+\date{\today}
+
+\begin{abstract}  
+\end{abstract}
+
+
+%\maketitle must follow title, authors, abstract, \pacs, and \keywords
+\maketitle
+
+
+
+\section{content}
+
+\subsection{more content}
+
+....
+
+
+\begin{acknowledgments}
+\end{acknowledgments}
+
+
+\appendix*
+\section{}
+
+%
+% If you use BibTeX you need to link to your .bib database here
+% Say you use foo.bib, then write \bibliography{foo}
+%
+%\bibliography{}
+
+%
+% If you think BibTeX is too much of a pain, you can alternatively hand-code the bibliography. In this case you
+% need to make sure that you adhere to the formatting rules of the journal or reed-thesis. 
+% If you want to hand code, do not use \bibliogrpahy{} but  \begin{thebibliography}{99} ..... \end{thebibliography}.
+% In between insert for each citation \bibitem[label] citation
+%
+% Example:
+%
+% 	\begin{thebibliography}{99}
+%
+%	\bibitem[illing2005]  L. Illing and D. J. Gauthier, ``Hopf bifurcations in time-delay systems with band-limited feedback,'' Physica D {\bf 210}, 180 (2005).
+%
+%	\end{thebibliography}
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

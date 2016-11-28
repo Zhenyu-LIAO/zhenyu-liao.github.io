@@ -1,0 +1,667 @@
+%
+% As physicist we often submit to physical review journals which have
+% the "revtex" environment as default. We will therefor use revtex.
+% It is however very similar to the standard "article" documentclass environment so
+% that there should be no compatibility issues.
+%
+% There are many options you can choose (in [  ] brackets) - see the revtex manual from
+% the american physics society
+%
+%
+%\documentclass[aps,pre,preprint,groupedaddress,nofootinbib]{revtex4}
+%\documentclass[aps,pre,preprint,nofootinbib]{revtex4}
+\documentclass[aps,twocolumn,pre,nofootinbib]{revtex4}
+
+% You should use BibTeX and apsrev.bst for references
+% Choosing a journal automatically selects the correct APS
+% BibTeX style file (bst file), so only uncomment the line
+% below if necessary.
+%\bibliographystyle{apsrev} % standard revtex style 
+%\bibliographystyle{plain} % shows titles
+%
+% apsrevlong.bst: Nonstandard style hacked by L. Illing to give journal titles
+% but otherwise conform to apsrev bibliography style.
+% You need to obtain "apsrevlong.bst" from the course webpage or me. 
+% It is not contained in any standard LaTeX distribution.
+\bibliographystyle{apsrevlong}
+
+% If you use BibTeX you need to invoke
+%   latex foo
+%   bibtex foo
+%   latex foo
+%   latex foo
+% to get the correct document out in the end. You may use 'pdflatex foo' instead of
+% 'latex foo' to obtain a pdf file instead of a dvi file.
+
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{graphicx}
+\usepackage{bbm}
+
+
+  % The switch below allows us to put the .pdf figures needed when 'pdflatex' is
+  % used and the .eps figured required when 'latex' is used into different 
+  % directories. The path to these directories is specified here and does not
+  % have to be specified in the text
+  %\ifx\pdfoutput\undefined
+  %    \usepackage{graphicx}
+  %    \graphicspath{{../epsfigs/}}	
+  % \else
+  %    \usepackage[pdftex]{graphicx}
+  %    \graphicspath{{../pdffigs/}}	
+  % \fi
+
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Definitions
+%
+%
+% Define your special symbols here
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% use to set width of figures
+  \newcommand{\breite}{1.0} %  for twocolumn
+% \newcommand{\breite}{0.6} %   for preprint
+
+\newtheorem{prop}{Proposition}
+\newtheorem{cor}{Corollary}
+
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+
+\newcommand{\bea}{\begin{eqnarray}}
+\newcommand{\eea}{\end{eqnarray}}
+
+\newcommand{\Reals}{\mathbb{R}}     % Reals
+%\newcommand{\Int}{\mathbb{Z}}       % 
+\newcommand{\Com}{\mathbb{C}}       % Complex #
+\newcommand{\Nat}{\mathbb{N}}       % Natural #
+
+
+\newcommand{\id}{\mathbbm{1}}    
+
+\newcommand{\Real}{\mathop{\mathrm{Re}}}
+\newcommand{\Imag}{\mathop{\mathrm{Im}}}
+
+\def\O{\mbox{$\mathcal{O}$}}   % Order epsilon ... 
+\def\F{\mathcal{F}}			% FourierTrafo
+\def\sgn{\text{sgn}}
+
+\newcommand{\dw}{\ensuremath{\Delta}}
+\newcommand{\wbp}{\ensuremath{\omega_0}}
+\newcommand{\dv}{\ensuremath{\delta}}
+\newcommand{\vbp}{\ensuremath{\nu_0}}
+\newcommand{\vplus}{\ensuremath{\nu_{+}}}
+\newcommand{\vminus}{\ensuremath{\nu_{-}}}
+\newcommand{\wplus}{\ensuremath{\omega_{+}}}
+\newcommand{\wminus}{\ensuremath{\omega_{-}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% End Definitions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%Title of paper
+\title{Lab Report Sample \\ Ultra-high-frequency chaos in a time-delay electronic device with band-limited feedback}
+
+
+% Place the author information here.  Please hand-code the contact
+% information and notecalls; do *not* use \footnote commands.  Let the
+% author contact information appear immediately below the author names
+% as shown.  We would also prefer that you don't change the type-size
+% settings shown here.
+
+% repeat the \author .. \affiliation  etc. as needed
+% \email, \thanks, \homepage, \altaffiliation all apply to the current
+% author. Explanatory text should go in the []'s, actual e-mail
+% address or url should go in the {}'s for \email and \homepage.
+% Please use the appropriate macro foreach each type of information
+
+% \affiliation command applies to all authors since the last
+% \affiliation command. The \affiliation command should follow the
+% other information
+% \affiliation can be followed by \email, \homepage, \thanks as well.
+
+\author{Lucas Illing}
+%\affiliation{Department of Physics, Reed College, Portland, Oregon,  97202, USA}
+%\email[]{illing@reed.edu}
+%\homepage[]{Your web page}
+%\thanks{}
+%\altaffiliation{}
+
+\author{Lab Partner: }
+\affiliation{Department of Physics, Reed College, Portland, Oregon,  97202, USA}
+%\email[]{Your e-mail address}
+%\homepage[]{Your web page}
+%\thanks{}
+%\altaffiliation{}
+
+\date{\today}
+
+\begin{abstract} 
+We report an experimental study of ultra-high-frequency chaotic dynamics generated in a delay-dynamical electronic device. It consists of a transistor-based nonlinearity, commercially-available amplifiers, and a transmission-line for feedback. The feedback is band-limited, allowing tuning of the characteristic time-scales of both the periodic and high-dimensional chaotic oscillations that can be generated with the device. As an example, periodic oscillations ranging from 48 MHz to 913 MHz are demonstrated.
+ We develop a model and use it to compare the experimentally observed Hopf-bifurcation of the steady-state to existing theory [Illing and Gauthier, Physica D {\bf 210}, 180 (2005)]. We find good quantitative agreement of the predicted and the measured bifurcation type and oscillation frequency.  
+\end{abstract}
+
+
+%\maketitle must follow title, authors, abstract, \pacs, and \keywords
+\maketitle
+
+
+
+\section{Introduction}
+
+ Time-delayed feedback occurs in many systems and mathematical descriptions of delay problems have been studied by scientist for many decades~\cite{Tinbergen1931,Frisch1935,Hutchinson1948}.  For example, control systems involve delay because time is needed to sense information about the current state and then react on it. 
+ In the description of such systems, delays are often used as an idealized representation of the effect of transmission and transportation and this becomes particularly important at high-speeds, where the time it takes signals to propagate through system components is comparable to the characteristic time-scale of fluctuations. 
+ Over the years delay equations appeared in various disciplines such as chemistry~\cite{Epstein1998}, where a delayed feedback is used to control chemical reactions, biology~\cite{Keener1998,Murray2002}, where delay arises due to final signal speeds in the nervous system, mechanics~\cite{Stepan1989}, where machine tool chatter is caused by delayed feedback, and nonlinear optics~\cite{Newell1992}, where unavoidable reflection provide delayed optical feedback. 
+ Therefore, knowledge that can be gained by studying delay systems in well controlled experiments greatly contributes to our understanding of many naturally occurring and man made systems.
+ In this report we undertake such a study and explore the dynamics of an electronic time-delay feedback device that generates chaos in the very-high and ultra-high (0.3 - 3 GHz) frequency band. 
+  
+
+The generation of chaotic signals is well understood for low-speed circuits~\cite{Carroll1995}, {\it i.e.} for devices with characteristic frequencies in the Hz or kHz range. However, there is considerable interest in generating high-speed chaos because of promising applications such as random signal radar/lidar~\cite{myneni2001,lukin2001,lin2004,lin2004a}, random number generation~\cite{Stojanovski2001,Gerosa2002,Gleeson2002}, and communications~\cite{VanWiggeren1998,Fischer2000,Kusumoto2002,Dronov2004,Argyris2005,Abarbanel2001}. Generating broadband chaotic signals in the radio-frequency (RF) regime is challenging because electronic components used in low-speed electronic circuits, such as operational amplifiers, are not readily available above a few GHz. Therefore, new techniques for chaos generation need to be explored. Furthermore, design-issues arise at RF-frequencies that do not exist at low speeds, such as proper circuit layout, proper isolation of power supply and active circuit elements, and non-negligible time-delays due to signal propagation, to name just a few.
+  
+These challenges are in part the reason that, to date, the most successful schemes for generating broadband chaotic signals at GHz-frequencies use optic~\cite{VanWiggeren1998,Fischer2000,Kusumoto2002}, electro-optic~\cite{Argyris2005,Pallavisini2007} and opto-electronic~\cite{Abarbanel2001,Blakely2004QE} devices. However, the use of all-electronic devices is desirable because electronic components are inexpensive and compact.
+ As with the optic and opto-electronic devices, the easiest way to generate high-speed chaos all-electronically is to exploit the fascinating fact that delayed feedback can result in exceedingly complex dynamics even in seemingly simple devices.  
+This approach has been taken in some recent efforts that have started to address the issue of all-electronic generation of chaos in technologically relevant radio frequency bands~\cite{blakely2004Chaos,Blakely2005,Mykolaitis2003}.
+For example, low dimensional chaos in the very-high-frequency range (30-300 MHz) has been demonstrated in a time-delay system with a diode-based nonlinearity~\cite{Blakely2005} and a high-speed chaotic delay-system with a transistor-based nonlinearity was reported~\cite{Mykolaitis2003}.
+
+In this paper we describe an electronic time-delay feedback device that generates chaos in the very-high and ultra-high (0.3 - 3 GHz) frequency band. It is built using inexpensive commercially-available components such as AC-coupled amplifiers and a transistor-based nonlinearity.
+Our device is similar to the one described by \citet{Mykolaitis2003}. In contradistinction to their work, we do include, in modeling, the fact that RF-components are AC-coupled and we provide a detailed comparison of experimentally observed dynamics and the dynamics of the deterministic model of the device.
+
+
+In our chaos generator, the complexity of the dynamics is controlled by feedback strength and time-delay, allowing the device to be tuned from steady-state behavior, to periodic, quasiperiodic, and chaotic dynamics. The characteristic time scale of the dynamics can be tuned by adjusting the pass-band characteristics of the feedback loop.
+We chose to work with feedback characteristics resulting in oscillations of several hundred MHz to a few GHz because this allows detailed measurements and characterization of the device dynamics.
+However, the device can, in principle, operate at higher frequencies, such as the 3 - 10 GHz frequency band, by using readily available higher-bandwidth components.
+
+ 
+In modeling the device, we pay special attention to the fact that components are AC-coupled, which means that low-frequency signals are suppressed. The time-delayed feedback is band-pass filtered because, in addition to the cut-off at low frequencies, high frequencies are suppressed due to the finite response time of device components. 
+
+The goal of this paper is to present details about the experimental implementation and to compare measurements and theory~\cite{illing2005} to demonstrate that many aspects of the device dynamics can be explained if the band-limiting characteristic of the feedback is taken into account. 
+
+
+ 
+
+
+\section{Experimental Setup}
+
+
+It is well known that time-delayed feedback of the output signal of a nonlinearity to it's input can give rise to chaotic dynamics~\cite{Argyris2005,blakely2004Chaos,Mykolaitis2003,Blakely2004QE,Ikeda1982,Celka1997,Udaltsov2002}.
+Our RF-chaos generator is based on the same principle and we describe and characterize the device in this section.  
+We discuss separately the passive nonlinearity, the setup of the RF-chaos generator, and the characteristics of the band-limited feedback with variable feedback gain.
+
+\subsection{Nonlinearity}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FIGURE 1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+% 
+\begin{figure}
+\includegraphics*[width=\breite \columnwidth]{Fig1} 
+\caption{Transistor-based nonlinearity (a)  Picture of the modified ERA-SM test board (modifications highlighted by the white box).  (b) Details of the implementation of the nonlinearity, which consists of a bias-T (Mini-Circuits ZFBT 6GW, 0.1 MHz - 6 GHz bandwidth) and a modified ERA-SM test board (Mini-Circuits ERA-TB). The component values on the ERA-TB are:  C1 = 47 nF; C2 = 0.39 $\mu$F; C3 = 0.1 $\mu$F; R$_{NL}$ = 68 $\Omega$; R1 = 47 $\Omega$;  R2 = 4.75 $\Omega$; R3 = 70 $\Omega$; L1 is a RF choke (MCL Model ADCH-80A); D1 is a 10 V Zener diode; and T1 is an NPN 9 GHz wideband transistor BFG520. (c) Measured nonlinearity (dots) and fit of Eq.~(\ref{tentnl}) (line).
+}
+\label{fig:nonlinearity}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+The transistor-based nonlinearity consists of a bias-T and a modified Mini-Circuits ERA-SM test board (ERA-TB). The ERA-TB is a commercially available proto-board that is meant to test Mini-Circuits ERA amplifiers.  A photograph of the modified ERA-TB is shown in Fig.~\ref{fig:nonlinearity}(a) and  the circuit diagram of the nonlinearity is shown in Fig.~\ref{fig:nonlinearity}(b).
+
+
+ To create a nonlinear input-output relationship, the ERA-TB is modified by replacing the ERA-amplifier with a transistor (T1), capacitor (C1),  and resistors (R$_{NL}$ and R1) [Fig.~\ref{fig:nonlinearity} (b)]. For this initial experiment, these components are placed using a ``dead bug design,'' {\it i.e.}, keeping them as close together as possible to avoid undesired feedback [white box in Fig.~\ref{fig:nonlinearity}(a)].
+
+ The DC-bias capabilities of the ERA-TB are used to set the power-supply voltage associated with the collector of transistor T1 [Fig.~\ref{fig:nonlinearity}(b)] while ensuring, at the same time, good isolation of the RF-output signals and the DC-voltage part of the circuit.
+A variable bias voltage of the transistor base is achieved  by further modifying the ERA-TB through removal of the AC-coupling capacitor at the input port and replacing it by an external bias-T, which combines the RF-input signal and the DC-bias voltage $V_B$.
+The bias voltage is $V_B = 0.55$~V for all data shown in this paper, {\it i.e.} it is below the turn-on voltage $V_T$ of the transistor (nominally $V_T \sim 0.7$~V). 
+
+  
+
+
+To develop a simple model of the nonlinearity, consider the generated output as a function of input signals of sufficiently high frequency such that the effects of the coupling capacitors can be neglected. 
+In this case, the output current is given by the voltage drop across the resistor $R_{NL}$ for input voltages smaller than the difference of the turn-on voltage and the bias voltage ($V_T-V_B$) because the transistor draws essentially no collector current.
+In contrast, the output current is given by the difference of the current flowing through $R_{NL}$ and the collector current of the transistor for input voltages larger than ($V_T-V_B$). This suggests a piecewise linear I-V characteristic, which results in a corresponding piecewise linear input-voltage to output-voltage relationship assuming a standard 50 $\Omega$ load (the input impedance of the device coupled to the output port is assumed to be 50 $\Omega$).  
+
+ 
+To determine  the input-output characteristic of the nonlinearity experimentally, we inject a sinusoidal signal ($\nu$=13 MHz) into the input port of the nonlinearity and simultaneously recorded input and output using an oscilloscope (Agilent Infiniium, with 50 $\Omega$ input impedance, 2.25 GHz bandwidth and 8 GSa/s).
+The measured tent-map-like input-output characteristic is shown as dots in Fig.~\ref{fig:nonlinearity}(c). 
+It is seen that the output depends linearly on the input for large input powers and that the nonlinearity has a smooth transition from positive to negative slopes. That is, a strictly piecewise-linear relation of input and output is a clear oversimplification of the actual nonlinearity. 
+Furthermore, device models in which the nonlinearity is approximated as piecewise-linear do not reproduce several dynamic features of the experiment such as Hopf-bifurcations, which are observed in the experiment but do not exist in a model with strictly linear segments. 
+For this reason, we adopt the following phenomenological description of the nonlinearity: 
+%
+\begin{equation}
+\begin{split}
+F(v) &= V_0 - \sqrt{ F_1(v)^2 + a^2} \qquad \text{with} \\
+F_1(v) &= 
+\begin{cases}
+A_l \; (v - v^*) &  \text{  if }\; v \le v^* ,\\
+A_r \; (v - v^*) & \text{  if  }\; v > v^* .
+\end{cases}
+\end{split}
+\label{tentnl}
+\end{equation}
+%
+Here, $v$ denotes the input voltage, $v^*=V_T-V_B$ is the threshold voltage, and $V_0$ is an offset voltage. The slopes of $F$ approach, respectively, $A_l$ and $A_r$ for large $|v|$ and the parameter $a$ determines the sharpness of the peak of $F$.
+
+In Figure~\ref{fig:nonlinearity}(c), a fit of Eq.~(\ref{tentnl}) to the data is shown as a solid line, with fitted parameters $A_l$ = 0.47 ($\pm$0.04), $A_r$ = -0.62 ($\pm$0.05), $a$ = 0.05 ($\pm$0.01)~V, and $v^*$ = 0.12 ($\pm$0.04)~V. Least-square minimization is used for fitting and a crude estimate of the sensitivity of the fit (values in brackets) is obtained by varying each parameter value individually and determining the size of parameter-deviations above which the resulting input-output curve was clearly inconsistent with the data. 
+The fit-value of $v^*$ suggests a transistor  turn-on voltage of $V_T$ = 0.67 ($\pm$0.04)~V, which is within the expected range.
+Also, the measured values of the slopes agree reasonably well with their expected values. As an example, one expects $A_l \sim R_L/(R_{NL} + R_L) = 0.42$, where $R_L$= 50~$\Omega$ is the load impedance and $R_{NL}$ is nominally 68~$\Omega$.
+
+The correct value for the remaining parameter $V_0$ cannot be obtained from the data because the measured output signal is high-pass filtered by the coupling capacitor C2 [Fig.~\ref{fig:nonlinearity}(b)]. As a result of the filtering, the measured output signal has a time average of zero, which, in terms of the filter-free input-output description of Eq.~(\ref{tentnl}), implicitly determines the value of $V_0$ for a given input, thereby making the fit-value of $V_0$ dependent on the properties of the input signal.
+For further modeling purposes, the knowledge of a precise value for $V_0$ is not necessary because the model also includes a high-pass filter [see Eq.~(\ref{ddemodel})].
+ We set $V_0=6$~Volt in numerical simulations.
+
+To test the frequency dependence of the nonlinearity, we vary the frequency of the sinusoidal injection signal. For frequencies up to 100 MHz, the input-output characteristics are essentially identical to that shown in  Fig.~\ref{fig:nonlinearity}(c). Beyond 100 MHz noticeable distortions arise mainly due to low-pass filtering in the nonlinearity and the measurement setup.
+Nevertheless, we believe that Eq.~(\ref{tentnl}) is a valid description of the  input-output characteristic for all experimentally relevant frequencies (3 MHz - 1 GHz) in particular since the dynamic device model also includes a low-pass filter [see Eq.~(\ref{ddemodel})]. 
+
+
+
+\subsection{RF-chaos generator}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FIGURE 2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%There are alternative versions of the float environments - in two-column documents, figure* provides a floating page-wide figure (and table* a page-wide table). The "*"ed float environments can only appear at the top of a page, or on a whole page - h or b float placement directives are simply ignored.
+% 
+\begin{figure*}
+%\includegraphics*[width= \breite \columnwidth]{Fig2} 
+\includegraphics*[width= 1.6 \columnwidth]{Fig2} 
+\caption{An electronic generator of RF chaos. (a)  Schematic of the device.
+ (b) Transfer function $|H(\nu)|$ for the case of a 10~pF capacitor in the feedback loop ($\bullet$ : data; --- : fit) and without capacitor ($\times$ : data; - - : fit). (c) Linear-scale plot of $|H|$ for the case of a 10~pF capacitor in the feedback loop ($\bullet$ : data; --- : fit).
+}
+\label{fig:setup}
+\end{figure*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+To generate chaos, linear and amplified time-delayed feedback from the nonlinearity to itself is implemented as shown schematically in Fig.~\ref{fig:setup}(a). 
+In this device, the signal coming from the feedback loop passes through a voltage-tunable attenuator (Mini-Circuits ZX73-2500, bandwidth 10~MHz - 2.5~GHz), a 12-dB fixed attenuator (JFW Industries Inc. 50HF-012, bandwidth DC - 18~GHz), and a fixed-gain amplifier (Mini-Circuits ERA 5SM, bandwidth 60~kHz - 4~GHz), which, in combination, results in a tunable amplification of the signal.
+ The amplified signal passes through the nonlinearity, another fixed-gain amplifier (Mini-Circuits ERA 3SM, bandwidth 60~kHz - 3~GHz) and is subsequently high-pass filtered by a capacitor ({\it e.g.}, 10 pF). 
+The filtered signal is then inverted and split by a hybrid magic-tee (MACOM H-9, bandwidth 2 MHz - 2 GHz). Half the signal power is used for feedback and the other half is used as output. The output is recorded with an oscilloscope (Agilent Infiniium, with 50 $\Omega$ input impedance, 2.25 GHz bandwidth and 8 GSa/s).
+All connections are made using SMA connectors and sufficient isolation of DC and AC signals is provided by the wideband RF-chokes (MCL Model ADCH-80A) contained in the biasing circuits for the amplifiers (Mini-Circuits ERA-TB).
+%
+The total feedback-delay in our experiment is between $6 - 25$~ns and can be varied on a coarse scale by changing the length of the coaxial-cable connecting the magic-tee and the attenuator [see Fig.~\ref{fig:setup}(a)] or on a finer-scale by using a line stretcher (Microlab/FXR SR-05N, 500 MHz - 4 GHz) in the feedback (not shown).
+
+
+
+\subsection{Band-limited feedback with variable gain}
+
+To determine the transfer characteristics of the feedback, the coaxial cable that is attached to the output of the magic-tee [Fig.~\ref{fig:setup}(a)] is disconnected and a small-amplitude sinusoidal signal is injected into the cable. Simultaneous measurement of input and output signals for different frequencies allows the determination of the transfer function $|H|=|V_{out}|/| V_{in}|$. The tent-map-like nonlinearity does not adversely affect this measurement because small-amplitude input signals (V$_{in}^{rms}< 100$~mV) only probe the ``left'' linear segment of the nonlinearity [see Fig.~\ref{fig:nonlinearity}(c)].
+
+The result of such a  measurement of $|H|$ is shown in Fig.~\ref{fig:setup}(b) on a log-log scale for a setup with a 10~pF capacitor in the feedback loop ($\bullet$) and for a setup without a capacitor in the feedback loop ($\times$). In the latter case, the high-pass filtering is entirely due to the fact that the RF-components in the device are AC-coupled. It is seen that the high-frequency cutoff is not affected by the inclusion of the 10~pF capacitor, whereas the high-pass filtering due to the capacitor shifts the low-frequency cutoff considerably.
+
+To make contact with theory~\cite{illing2005}, we fit the data shown in Fig.~\ref{fig:setup}(b) to a model, where, for simplicity, the transfer characteristics of the feedback is approximated by a two-pole band-pass filter.
+\begin{equation}
+\label{H}
+\left| H(\nu) \right| = \frac{ \nu \, \dv}{\sqrt{ \left(\vbp^2 - \nu^2 \right)^2 +  \nu^2 \, \dv^2 }}
+\end{equation}
+Here, $\vbp$ denotes the frequency of maximal transmission and $\dv$ denotes the bandwidth. These parameters are given in terms of the 3~dB cutoff-frequencies $\vplus$ and $\vminus$ ($|H(\nu_{\pm})|^2 = 1/2$) by $\vbp^2=\vplus \vminus$ and $\dv=\vplus -\vminus$.
+For the case of a 10~pF capacitor in the feedback loop, the fit yields $\vbp \! \sim \! 236$~MHz and $\dv \! \sim \! 391$ MHz [$\vminus$ = 110~MHz, $\vplus$ = 502~MHz, solid line in Fig.~\ref{fig:setup}(b) and (c)]. For the case without an additional capacitor, $\vbp \! \sim \! 41$~MHz and $\dv \! \sim \! 547$~MHz is obtained [$\vminus$ = 3~MHz, $\vplus$ = 550~MHz, dashed line in Fig.~\ref{fig:setup}(b)].
+In fitting, we add more weight to data points with large values of $|H|$ because a good fit of the peak of $|H|$ is important for reproducing the observed dynamics. 
+
+
+Figures~\ref{fig:setup}(b) and (c) show that a two-pole band-pass filter description of the transfer function is not a perfect approximation of the measured transfer characteristics. Clearly, allowing higher order filters would result in a better fit of the data. However, a description by higher-order filters would increase the model-complexity and we believe that the two-pole-filter approximation is a good compromise between model accuracy and model simplicity. Indeed, we will show below that quantitative agreement of theory and experiment is possible with this approximation.
+
+The measured high-frequency 3~dB-cutoff of  500-600 MHz is mainly due to the band-limitations of the nonlinearity [Fig.~\ref{fig:nonlinearity}], for which a 3~dB-cutoff frequency of $\sim \! 1 \!$~GHz was measured. The bandwidth is further suppressed due to the combined effect of the nonideal behavior of the remaining device components [Fig.~\ref{fig:setup}(a)], all of which exhibit a slow roll-off of the transfer function for frequencies below their 3~dB-cutoff ($\ge 2$~GHz).
+Higher bandwidths could be achieved in a future design by reducing the number of components and by implementing the nonlinearity as a microstrip circuit.
+
+
+Another important parameter that characterizes the device is the feedback gain. It is varied, in the experiment, by changing  $V_{con}$, the control voltage of the variable attenuator [Fig.~\ref{fig:setup}(a)]. 
+The dependence of the small-signal feedback gain on $V_{con}$ was determined using the same setup that was used to measure $|H|$, only this time the frequency of the input signal is fixed at the frequency of maximal transmission $\vbp$ and $V_{con}$ is varied. What is measured in this way is the small-signal effective gain at $\vbp$, denoted by $b$
+\begin{equation}
+b(V_{con}) = - \gamma(V_{con})\; F'(0).
+\label{b_def}
+\end{equation}
+Here, $\gamma(V_{con})$ is the total feedback gain (nonnegative), the minus sign accounts for the signal inversion at the magic-tee, and $F'$ is the slope of the nonlinearity. 
+ The measured mapping of $V_{con}$ to $b$ is approximately linear for the control voltages used in the experiment (2 - 4~V) and is given by
+\begin{equation}
+b(V_{con}) = - \beta \left(V_{con} - V_0 \right) e^{ - \kappa \ell }
+\label{b(Vcon)}
+\end{equation}
+with $\beta = 1.195 \pm 0.002$~V$^{-1}$ and $V_0 = 1.15 \pm 0.02$~V. 
+The exponential factor on the right-hand side of Eq.~(\ref{b(Vcon)}) takes into account signal attenuation in the coaxial cable, where $\ell$ is the length of the RG-174/U cable and $\kappa =0.05$~m$^{-1}$.
+
+ 
+
+
+\section{Model and theoretical predictions}
+
+
+In this section, we present a model and recall some theoretical results concerning steady-state bifurcations in delay-system with band-limited feedback. 
+
+Dynamics arises in the device due to the interaction of the nonlinearity and the linear time-delayed feedback.
+The complexity of models for such delay-feedback systems increases as more details about the feedback characteristics are included. For example, assuming a linear feedback of infinite bandwidth results in map-models, whereas taking into account the finite response time of device components through a single-pole low-pass filter results in scalar delay-differential equations~\cite{Ikeda1982,Celka1997}.
+  It has been shown that for RF-devices, such as the one discussed in this paper, it is essential to account for both the finite-bandwidth of the device-components (low pass filter) and the fact that RF-components are AC-coupled (high pass filter), in order to reproduce the observed dynamics at least qualitatively~\cite{Blakely2004QE,illing2005,Udaltsov2002}.
+ Thus, we adopt a model consisting of an integro-differential equation with time-delay, where, for simplicity, it is assumed the transfer characteristics of the feedback can be approximated by a two-pole band-pass filter.
+ 
+ \subsection{Bandpass filter in the time domain}
+ We derive here for completeness the time-domain representation of a bandpass-filter associated with the transfer function given in Eq.~(\ref{H}). To that avail, consider the Fourier transform $\F$ and its inverse $\F^{-1}$
+(here we adapt the modern physics convention) %
+%
+\bea
+\hat{x}(\omega) =& \F\left[ x(t) \right] &= \frac{1}{\sqrt{2 \pi}} \int_{-\infty}^{\infty} \! dt \; x(t) e^{i \omega t}, \\
+x(t) = &\F^{-1}\left[ \hat{x}(\omega) \right]& = \frac{1}{\sqrt{2 \pi}} \int_{-\infty}^{\infty} \! d\omega \; \hat{x}(\omega)e^{- i \omega t}. 
+\eea
+%
+%
+It can  be shown \cite{arfken2001} that for `well behaved' $x(t)$ the Fourier transform of derivatives is given by
+\bea
+ \F\left[ \frac{d}{dt} x(t) \right]  &=& (-i \omega) \hat{x}(\omega) 
+ \eea
+ and the following relation holds for Fourier transforms of integrals 
+ \bea
+ \F\left[  \int_{-\infty}^{t}\!\! dl \; x(l) \right]  &=& \frac{\hat{x}(\omega)}{ (-i \omega)} + \pi \hat{x}(0) \delta(\omega).
+\eea
+Consider then the following time-domain model of a bandpass filter:
+\begin{equation}
+\label{bp_td}
+x(t) + \frac{\dot{x}(t)}{\dw}  + \frac{\wbp^2}{\dw} \int_{-\infty}^{t}\!\! dl \; x(l) = x_{in}(t).
+\end{equation}
+Taking the Fourier transform of both sides of Eq.~(\ref{bp_td}) yields
+\bea
+\hat{x}(\omega) + (-i \omega) \frac{\hat{x}(\omega)}{\dw}  + \frac{\wbp^2}{\dw}  \left[ \frac{\hat{x}(\omega)}{ (-i \omega)} + \pi \hat{x}(0) \delta(\omega) \right] &=& \hat{x}_{in}(\omega) \nonumber
+\eea
+From which follows that
+\bea
+\hat{x}(\omega) \frac{- i \omega \dw - \omega^2 + \wbp^2}{-i \omega \dw} &=& \hat{x}_{in}(\omega) -  \frac{\wbp^2}{\dw}  \pi \hat{x}(0) \delta(\omega)  \nonumber
+\eea
+Thus, the transfer function is given by
+\bea
+H(\omega) &=&  \frac{\hat{x}(\omega)}{ \hat{x}_{in}(\omega)} \nonumber \\
+&=&  \frac{-i \omega \dw}{- i \omega \dw - \omega^2 + \wbp^2} \left(1  -  \frac{\wbp^2 \pi   \hat{x}(0) }{\dw \hat{x}_{in}(\omega)}  \delta(\omega) \right) \label{H_firstline} \nonumber \\
+&=&  \frac{-i \omega \dw}{- i \omega \dw - \omega^2 + \wbp^2} 
+\eea
+where the third equality follows because $H(0)=0$ and the second term on the right hand side of Eq.~(\ref{H_firstline}) only contributes if $\omega=0$. 
+Using  $\omega=2 \pi \nu$ and defining the parameters $\wbp = 2 \pi \vbp$ and $\dw = 2 \pi \dv$, we obtain  for the magnitude of the transfer function
+ \begin{equation}
+\label{H2}
+\left| H(\nu) \right| = \frac{ \nu \, \dv}{\sqrt{ \left(\vbp^2 - \nu^2 \right)^2 +  \nu^2 \, \dv^2 }}.
+\end{equation}
+ It is seen, that Eq.~(\ref{H2}) and Eq.~(\ref{H}) are identical. This demonstrates that Eq.~(\ref{bp_td}) describes a two-pole bandpass filter.
+
+\subsection{Model}
+ To complete the model we set the input signal $x_{in}$ in Eq.~(\ref{bp_td}) equal to the feedback signal to obtain
+%
+\begin{equation}
+\label{ddemodel}
+v(t) + \frac{\dot{v}(t)}{\dw}  + \frac{\wbp^2}{\dw} \int_{-\infty}^{t}\!\! dl \; v(l) = \alpha \, F\left[- \frac{\gamma}{\alpha} \; v(t-\tau)\right]
+\end{equation}
+%
+In this equation, $\tau$ is the delay,  $v$ is the band-pass filtered signal that is measured in the experiment, 
+ the parameter $\wbp = 2 \pi \vbp$ is the angular-frequency of maximal transmission, and $\dw = 2 \pi \dv$.  
+For the case of a 10~pF capacitor in the feedback,  $\wbp = 1.5 \times 10^9$~rad/s and $\dw = 2.5 \times 10^9$~rad/s. 
+The nonlinearity $F$ is given by Eq.~(\ref{tentnl}) and the minus sign in the argument of $F$ in Eq.~(\ref{ddemodel}) accounts for the inversion of the feedback signal in the magic-tee. That is, the device has negative feedback.
+The parameter $\gamma$ denotes the total feedback gain,  whereas $\alpha \sim 9$ is the fixed gain a signal experiences between the output of the nonlinearity and the output of the magic-tee that is connected to the oscilloscope [see Fig.~\ref{fig:setup}(a)]. 
+
+Of the model parameters, $\wbp$ and $\dw$ are known, the delay $\tau$ can be measured directly, and the total gain $\gamma$ is determined in terms of the attenuator control voltage $V_{con}$ by Eq.~(\ref{b_def}) and Eq.~(\ref{b(Vcon)}) for the case of small amplitude dynamics. Thus, there are no free-parameters in the model and, consequently, quantitative predictions are possible.
+
+In a previous publication, we analyzed the steady-state bifurcations for time-delay systems with band-limited feedback and arbitrary nonlinearity~\cite{illing2005}.  This analysis applies directly to the device model Eq.~(\ref{ddemodel}). This can be seen by using a transformation that maps the integro-differential time-delay equation given in Eq.~(\ref{ddemodel}) to the second order delay-differential equation studied in  Ref.~\cite{illing2005}.
+The mapping is achieved by introducing
+\begin{align*}
+x&= - (\gamma/\alpha) v   &  y&=-\gamma F[0] + (\wbp^2 \gamma)/(\dw \alpha) \int_{-\infty}^t \! v(l) dl \\
+s &=  t \, \dw                      &    \hat{\tau}& =  \tau \, \dw  \\
+ r&=\wbp^2/\dw^2             &  f(x)&=F(x)-F(0).
+\end{align*}
+ As a result, we obtain
+ \begin{equation}
+\label{2D_DDE}
+\begin{split}
+\dot{x}(s) &= -x(s) + y(s) - \gamma \; f\left[ x(s - \hat{\tau}) \right] \\
+\dot{y}(s) &= -r x(s),
+\end{split}
+\end{equation}
+which is precisely the model discussed in Ref.~\cite{illing2005}. We may write this equivalently in matrix form, which we do in the appendix in order to  to demonstrate some typesetting.
+
+\subsection{Theoretical Predictions}
+
+The theory predicts that self-sustaining oscillations arise through Hopf-bifurcations of the steady state as system parameters such as the delay $\tau$ or the feedback gain are varied. 
+That is, whereas for small enough feedback gain the steady state, given by $x=y=0$, is stable, the steady state becomes unstable as the feedback gain is increased. The solution $x=y=0$ still exists but arbitrarily small perturbations away from this solution will result in oscillatory system dynamics. In particular, for feedback gains close to the critical value the system will oscillate sinusoidally and for a supercritical Hopf-bifurcation the oscillation amplitude will increase smoothly from zero as the feedback gain is increased from below to above threshold. 
+
+
+ Experimentally the frequency of oscillation is the quantity that is most readily measured. The frequency of the oscillations at onset roughly scales as $\nu = n/(2 \tau)$, where $n$ is an odd integer for negative feedback.     
+This scaling  is explained by considering whether a wave circulating in the feedback loop will reinforce itself. For the case of positive feedback a periodic perturbation will reinforce itself, if the feedback delay is a multiple of the wave's period, i.e. $\nu \sim n / (2 \tau)$ with $n$ an even integer.  On the other hand, a sinusoidal perturbation is amplified by negative feedback, if it is shifted by half its period after one round-trip. Thus, the frequency is expected to scale as $\nu \sim n / (2 \tau)$ with $n$ an odd integer. 
+
+It is also predicted that different oscillation ``modes'' will be observed as the delay $\tau$ is increased. That is, as a consequence of AC-coupling, there exist jumps in the value of $\nu$ as a function of the delay, a feature that distinguishes band-pass feedback from low-pass feedback (Ikeda-type systems \cite{Ikeda1982}). In detail,
+the frequency of the observed oscillations will jump  from $\nu \sim n / (2 \tau)$ to $\nu \sim (n+2) / (2 \tau)$ as $\tau$ is varied.  These jumps are explained by the fact that the feedback gain as a function of frequency  is not perfectly flat over the pass-band.  As the overall feedback gain (for all frequencies)  is increased from a low level, one particular mode-frequency will first reach the threshold where the gain in the loop balances the losses. In a system with only low-pass feedback, the gain is highest at low frequencies, so the oscillation-mode with the lowest frequency is always the one that destabilizes the steady state, independent of the delay. On the other hand, the high-pass filter introduces a bias toward high frequencies. Because the frequency scales roughly as $\nu\sim \tau^{-1}$ for each mode $n$, the damping effect of the high pass filter on a particular mode becomes more pronounced with increasing delay time $\tau$. Therefore, there exists a delay $\tau$ for which a higher order mode, one that has a higher frequency for a given delay, will reach threshold first.
+
+
+The Hopf-bifurcation type can also be determined. To that avail, note that the effective gain is negative due to the negative feedback [Eq.~(\ref{b_def})]  and that the first and third derivative of the nonlinearity evaluated at the steady state satisfy $F' F''' < 0$ [Eq.~(\ref{tentnl})]. Under these conditions, it follows from~\citet{illing2005,illing2006} that the Hopf-bifurcation is supercritical for delays satisfying
+%
+%
+\begin{equation}
+\tau \ge \frac{1}{12} \frac{\dv}{\vbp^2} \left( \sqrt{ 3+ 4 \vbp^2/\dv^2 } -\sqrt{3} \right),
+\end{equation}
+as long as $\vbp^2/\dv^2 \le 6$ holds.
+%
+ In particular, for the case of a 10~pF capacitor in the feedback loop, the model predicts the Hopf-bifurcations to be supercritical for  $\tau>0.22$~ns, {\it i.e.}, for all experimentally accessible delays.
+
+
+
+
+
+
+\section{Hopf Bifurcations \label{sec:hopf}}
+
+
+In this section, we compare experiment and theoretical predictions regarding the steady state bifurcation.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FIGURE 3
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+% 
+\begin{figure}
+\includegraphics*[width=\breite \columnwidth]{Fig3} 
+\caption{Characterization of the Hopf bifurcations for a setup with a 10~pF capacitor. (a) Supercritical Hopf-bifurcation: oscillation amplitude as a function of the attenuator control voltage $V_{con}$ for $\tau=10.4$~ns. Increased $V_{con}$ corresponds to increased (negative) feedback gain. (b) The measured dependence of the Hopf-frequency on the time delay $\tau$ is shown ($\bullet$). The dashed lines are the approximate $n/(2 \tau)$ scaling. The solid line is from theory (see text).   }
+\label{fig:transfreq}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+In experiment, we observe the dynamics of the device as we vary the feedback gain while the delay is held fixed. The feedback gain is increased by increasing the control voltage $V_{con}$ of the tunable attenuator, {\it i.e.}, by decreasing the attenuation. 
+For small values of the feedback gain, the system resides in a steady state. As the gain crosses a critical value, a supercritical Hopf-bifurcation occurs and gives rise to periodic oscillations.
+
+An example of such a measurement is shown in Fig.~\ref{fig:transfreq}(a), where it is seen that the oscillation amplitude grows smoothly as $V_{con}$ is increased beyond a critical value of $\sim \! 2.1$~V. In contrast, the measured oscillation frequency remains roughly constant ($\nu \! \sim \! 240$ MHz). In combination, these measurements indicate that the steady state loses stability through a supercritical Hopf bifurcation.
+We find that the steady state becomes unstable through supercritical Hopf bifurcations for all delays (6-25 ns), in agreement with the theoretical predictions.
+
+
+An important advantage of chaos generators that use band-limited feedback is the ability to tune the main time scale of the device dynamics.
+In our device, the main time scale can be varied by more than a factor of ten simply by changing the capacitor in the feedback loop (see Fig.~\ref{fig:setup}).
+ For example, at a fixed feedback delay of $\tau=10.5$~ns, the frequency is $\nu = 48$~MHz for a setup without an additional capacitor in the feedback loop, $\nu = 238$~MHz for a $\sim \! 10$~pF capacitor, and $\nu = 913$~MHz for a $\sim \! 2$~pF capacitor.
+Here, we are using the frequency of the oscillations at the Hopf bifurcation (Hopf-frequency) as a proxy for the main time scale. 
+
+
+Experimentally, the Hopf-frequency is the quantity most readily measured and therefore ideally suited for comparison of experiment and theory.
+For all quantitative comparisons, we use an experimental setup with a 10~pF capacitor in the feedback. As a result, the main time scale of the dynamics is  $\sim \! 4$ ns ($\vbp^{-1}$), which allows high-resolution measurements in the time and frequency domain with the available equipment.
+Choosing $\vbp$ does not entirely fix the oscillation frequency at the Hopf-bifurcation, which also depends on the time delay, as is shown in Fig.~\ref{fig:transfreq}(b). It is seen that jumps occur between oscillation modes and that each mode scales as $\nu = n/(2 \tau)$ with $n$ odd (dashed lines), as predicted by the theory. 
+The solid line in Fig.~\ref{fig:transfreq}(b) is the result from a linear stability analysis of Eq.~(\ref{ddemodel})~\cite{illing2005}. The agreement of theory and experimental data ($\bullet$) in terms of the values of the Hopf-frequency  and the location of the mode-jumps is excellent.
+
+
+
+
+
+In this section we have compared the experimentally measured device dynamics to analytic predictions based on a parameter-free model consisting of a simple integro-differential equation with time-delay.
+On the level of bifurcations from the steady state, such a simple model turns out to be sufficient to reproduce the observed dynamics quantitatively.
+
+
+
+
+
+
+\section{High-dimensional Chaos \label{sec:chaos}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FIGURE 4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+% 
+\begin{figure}
+\includegraphics*[width=\breite \columnwidth]{Fig5} 
+\caption{Experimentally measured time series as well as the corresponding power spectra and Poincar\'{e} sections are shown for (a)-(c) $V_{con}=2.07$~V, (d)-(f) $V_{con}=2.6$~V, and (g)-(i) $V_{con}=3.6$~V. The feedback loop contained a $\sim$10~pF capacitor, $\tau=10.5$~ns, and  $\Delta_{\tau} = 1$ ns.}
+\label{fig:r2c_exp}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+Beyond the Hopf bifurcation, successively more complex dynamics develops as the gain is increased. Experimental results are presented in Fig.~\ref{fig:r2c_exp}, where time-traces are displayed in the first column and the corresponding spectra in the second column. In the third column, we show the location where the measured trajectory crosses unidirectionally a Poincar\'{e} plane in a three-dimensional delay-embedding space with embedding-delay $\Delta_{\tau} \! = \! \tau$.
+%
+At feedback gains slightly above the critical value, the oscillations are sinusoidal [Fig.~\ref{fig:r2c_exp}(a)], resulting in a spectrum that is dominated by the main frequency [Fig.~\ref{fig:r2c_exp}(b)] and a single point in the Poincar\'{e} plane [Fig.~\ref{fig:r2c_exp}(c)].
+%
+At higher feedback gains, the oscillations begin to square off and prominent odd harmonics appear in the spectrum (not shown). As the gain is increased further, frequency components that are non-commensurate with the fundamental frequency appear and grow in power, resulting in a dense comb of frequencies in the spectrum. This signature of quasi-periodic dynamics is clearly seen in Fig.~\ref{fig:r2c_exp}(e). The existence of a torus-attractor is confirmed by the appearance of a closed curve in the Poincar\'{e} section [Fig.~\ref{fig:r2c_exp}(f)]. 
+%
+For even larger gains, the broad background in the spectrum rises and the power in the fundamental frequency peak shrinks, as can be seen in Fig.~\ref{fig:r2c_exp}(h). Furthermore, no structure can be discerned in the Poincar\'{e} section. This is indicative of high-dimensional chaos. 
+
+
+\section{Summary and Discussion}
+
+Time-delays are present and signals are bandpass filtered in circuits that operate in the ultra-high frequency band and consist of commercially available prepackaged RF-components.
+Our approach is to exploit inherent time-delays and band-limiting component characteristics for the generation of complex dynamics. We discuss in this paper a device resulting from this approach, an easy to implement all-electronic generator of  chaotic oscillations at GHz frequencies. The device has the advantage that the characteristic time scale and the bandwidth of the chaotic output can be tuned by changing the properties of the feedback-loop. Further positive aspects of the device are that it is built using commercially-available components and that it can, in principle, be operated at higher frequencies such as the 3-10 GHz band in which the operation of ultra-wideband transmission systems is allowed.\footnote{The Federal Communications Commission (FCC) revised the rules regarding ultra-wideband transmission systems in 2002 in order to permit the operation of ultra-wideband technology.}
+
+Comparison of the measured device dynamics to theory shows that a simple integro-differential equation with delayed feedback (equivalent to a second-order delay-differential equation) captures many of the observed dynamic features. Indeed, good quantitative agreement is found on the level of bifurcations from the steady state and the observed quasiperiodic and chaotic behavior is qualitatively reproduced by the model.
+
+In this context, it is important to note that the device was operated in a `weak' feedback regime for all data shown in this paper.  In the experimental device, the amplifiers will exhibit saturation effects for strong feedback, which introduces additional feedback nonlinearities. In the strong-feedback regime, we observe chaotic oscillations with a nearly featureless power spectrum (not shown). In contrast, the saturation-free model [Eq.(\ref{tentnl}) and Eq.~(\ref{ddemodel})] becomes unstable for large values of the feedback parameter $\gamma$ ($\gamma \gtrsim 5$).  However, omitting saturation effects in the model allows us to show conclusively that high-dimensional chaos arises in the weak-feedback regime due to the interaction of  the linear band-limited time-delayed feedback with the transistor-based nonlinearity.
+
+It is well known that dynamical systems with delayed feedback often have very rich dynamics and bifurcation diagrams. This is also true for delay-systems with band-limited feedback. For example, we observe coexisting stable limit cycles over wide parameter ranges, demonstrating the system's multistability. Furthermore, periodic windows are found within the quasiperiodic and chaotic regimes, which is indicative of the complex bifurcation scenario in this system. It would be interesting to investigate in more detail the bifurcations leading to quasiperiodicity and to the appearance of periodic windows.
+
+We believe that this chaotic electronic device is ideally suited for both experimental investigation of the nonlinear dynamics of time-delay systems and technological application of high-speed chaos such as ranging, intrusion detection, tracking, and random number generation. 
+
+
+
+\begin{acknowledgments}
+I thank W. L. Ebenstein for helping with the measurements and Dan Gauthier, the coauthor of the original work on which this sample report is based~\cite{illing2006},  for being a great mentor to me. (If you got money from a federal agency, include) This work was supported by ...
+\end{acknowledgments}
+
+
+\appendix*
+\section{}
+
+Typically the appendix contains technical details and lengthy derivations that you believe are of no interest to the average reader and that would break the flow of the main argument.  Often these details are important for those interested readers who actually want to perform your experiment or check the calculations. 
+
+\bigskip
+
+In this case I include some more typesetting examples.
+
+\bigskip
+
+The model can be written as an integro-differential equation [Eq.~(\ref{ddemodel})], which we repeat here for convenience
+\bea
+ &v(t) + \frac{\dot{v}(t)}{\dw}  + \frac{\wbp^2}{\dw} \int_{-\infty}^{t}\!\! dl \; v(l) = \alpha \, F\left[- \frac{\gamma}{\alpha} \; v(t-\tau)\right], & \\
+&
+\begin{aligned}
+F(v) &= V_0 - \sqrt{ F_1(v)^2 + a^2} \qquad \text{with} \\
+F_1(v) &= 
+\begin{cases}
+A_l \; (v - v^*) &  \text{  if }\; v \le v^* ,\\
+A_r \; (v - v^*) & \text{  if  }\; v > v^* .
+\end{cases}
+\end{aligned}
+&
+\eea
+%
+or, equivalently, as a second-order delay-differential equation [Eq.~(\ref{2D_DDE})], which we write here in matrix form
+\be
+\frac{d}{ds} 
+\begin{pmatrix}
+          x \\
+          y 
+\end{pmatrix}
+=
+\begin{pmatrix}
+          -1 & 1 \\
+          -r & 0 
+\end{pmatrix}
+\begin{pmatrix}
+          x \\
+          y 
+\end{pmatrix}
+- \gamma \; \id \;
+\begin{pmatrix}
+ f\left[ x(s - \hat{\tau}) \right] \\
+0
+\end{pmatrix}
+\ee
+where $\id$ is the $2 \times 2$ identity matrix. The values of the relevant parameter are listed in Tab.~\ref{partab}
+
+\bigskip
+\begin{prop}[~\citet{illing2005,illing2006}]
+\label{main_theorem}
+For $r, \hat{\tau} \in \Reals^+$ and $n=0,1, 2,\ldots :$  \\
+ If $f'(0) \, f'''(0) + f''(0)^2 \, C^n(\hat{\tau},r) < 0$ $(> 0)$, the Hopf bifurcation is supercritical (subcritical).
+\end{prop}
+%
+\begin{cor}[\citet{illing2006}] At the stability boundary of the steady state, the following holds for the Hopf bifurcation :
+\label{cor1}
+If $b<0$, $\hat{\tau} \ge \tau_C^1(2 \pi/3)$, $r \le 6$, and $f'(0) f'''(0) < 0$, the bifurcation is supercritical.
+ If $b > 0$, $\hat{\tau} \ge n \pi / \sqrt{r}$, $r \le 15/16$, and $f'(0) f'''(0) < 0$, the bifurcation of the $n$th mode from the steady state is supercritical.
+\end{cor}
+
+
+\begin{table}
+\caption{Model parameters for the setup with a 10~pF capacitor in the feedback loop}
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+ $\;$ Symbol  $\;$ & Value & Description \\
+\hline
+ $A_l$ & 0.47 ($\pm$0.04) 	& left slope of nonlinearity		\\
+ $A_r$ & -0.62 ($\pm$0.05)     & right slope of nonlinearity	\\
+ $a$ & 0.05 ($\pm$0.01)~V       & sets peak smoothness\\
+ $v^*$ & $\;$ 0.12 ($\pm$0.04)~V   $\;$  & threshold voltage 			\\
+ $V_0$ & 6 V                                & DC offset voltage			\\
+\hline
+$\tau$ & 6 -- 25 ns & delay  \\
+$\gamma$& 2 -- 9 & $\;$ feedback gain  $\;$\\
+$\alpha$ & 9 & fixed feedback gain\\
+$\wbp$ & $1.5 \times 10^9$~rad/s & max. transmission freq. \\
+$\dw$ &  $2.5 \times 10^9$~rad/s & bandwidth \\
+\hline
+$r$&  0.36 & `small' parameter\\
+$\hat{\tau}$& 15 -- 63 & dimensionless delay\\
+\hline
+\end{tabular}
+\end{center}
+\label{partab}
+\end{table}%
+
+%
+% If you use BibTeX you need to link to your .bib database here
+% 
+\bibliography{references}
+
+%
+% If you think BibTeX is too much of a pain, you can alternatively hand-code the bibliography. In this case you
+% need to make sure that you adhere to the formatting rules of the journal or reed-thesis. 
+% If you want to hand code, do not use \bibliogrpahy{} but  \begin{thebibliography}{99} ..... \end{thebibliography}.
+% In between insert for each citation \bibitem[label] citation
+%
+% Example:
+%
+% 	\begin{thebibliography}{99}
+%
+%	\bibitem[illing2005]  L. Illing and D. J. Gauthier, ``Hopf bifurcations in time-delay systems with band-limited feedback,'' Physica D {\bf 210}, 180 (2005).
+%
+%	\end{thebibliography}
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
