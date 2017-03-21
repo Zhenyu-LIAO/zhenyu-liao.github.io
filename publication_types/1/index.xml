@@ -10,6 +10,15 @@
     <atom:link href="/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Une Analyse des Méthodes de Projections Aléatoires par la Théorie des Matrices Aléatoires (in French)</title>
+      <link>https://zhenyu-liao.github.io/publication/RMT4ELM-GRETSI/</link>
+      <pubDate>Tue, 21 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhenyu-liao.github.io/publication/RMT4ELM-GRETSI/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Random Matrices meet Machine Learning: a Large Dimensional Analysis of LS-SVM</title>
       <link>https://zhenyu-liao.github.io/publication/RMT4LSSVM-ICASSP/</link>
       <pubDate>Sat, 01 Oct 2016 00:00:00 +0000</pubDate>
