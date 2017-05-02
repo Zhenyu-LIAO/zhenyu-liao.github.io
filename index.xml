@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zhenyu&#39;s page on Zhenyu&#39;s page</title>
-    <link>https://zhenyu-liao.github.io/index.xml</link>
+    <link>https://zhenyu-liao.github.io/</link>
     <description>Recent content in Zhenyu&#39;s page on Zhenyu&#39;s page</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Zhenyu Liao</copyright>
     <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Une Analyse des Méthodes de Projections Aléatoires par la Théorie des Matrices Aléatoires (in French)</title>
-      <link>https://zhenyu-liao.github.io/publication/RMT4ELM-GRETSI/</link>
+      <link>https://zhenyu-liao.github.io/publication/rmt4elm-gretsi/</link>
       <pubDate>Tue, 21 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://zhenyu-liao.github.io/publication/RMT4ELM-GRETSI/</guid>
+      <guid>https://zhenyu-liao.github.io/publication/rmt4elm-gretsi/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ICASSP&#39;17: Lecture section: Deep Learning IV</title>
-      <link>https://zhenyu-liao.github.io/talk/ICASSP17/</link>
+      <link>https://zhenyu-liao.github.io/talk/icassp17/</link>
       <pubDate>Thu, 09 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://zhenyu-liao.github.io/talk/ICASSP17/</guid>
+      <guid>https://zhenyu-liao.github.io/talk/icassp17/</guid>
       <description>&lt;p&gt;Time: Thursday, March 9, 13:30 - 15:30&lt;/p&gt;
 
 &lt;p&gt;Location: Lecture Room 6&lt;/p&gt;
@@ -37,28 +37,28 @@
     
     <item>
       <title>A Random Matrix Approach to Neural Networks</title>
-      <link>https://zhenyu-liao.github.io/publication/RMT4ELM-AAP/</link>
+      <link>https://zhenyu-liao.github.io/publication/rmt4elm-aap/</link>
       <pubDate>Fri, 17 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://zhenyu-liao.github.io/publication/RMT4ELM-AAP/</guid>
+      <guid>https://zhenyu-liao.github.io/publication/rmt4elm-aap/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A Large Dimensional Analysis of Least Squares Support Vector Machines</title>
-      <link>https://zhenyu-liao.github.io/publication/RMT4LSSVM-JMLR/</link>
+      <link>https://zhenyu-liao.github.io/publication/rmt4lssvm-jmlr/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://zhenyu-liao.github.io/publication/RMT4LSSVM-JMLR/</guid>
+      <guid>https://zhenyu-liao.github.io/publication/rmt4lssvm-jmlr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Random Matrices meet Machine Learning: a Large Dimensional Analysis of LS-SVM</title>
-      <link>https://zhenyu-liao.github.io/publication/RMT4LSSVM-ICASSP/</link>
+      <link>https://zhenyu-liao.github.io/publication/rmt4lssvm-icassp/</link>
       <pubDate>Sat, 01 Oct 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://zhenyu-liao.github.io/publication/RMT4LSSVM-ICASSP/</guid>
+      <guid>https://zhenyu-liao.github.io/publication/rmt4lssvm-icassp/</guid>
       <description></description>
     </item>
     

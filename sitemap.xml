@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>https://zhenyu-liao.github.io/home/about/</loc>
@@ -22,27 +23,27 @@
   </url>
   
   <url>
-    <loc>https://zhenyu-liao.github.io/publication/RMT4ELM-GRETSI/</loc>
+    <loc>https://zhenyu-liao.github.io/publication/rmt4elm-gretsi/</loc>
     <lastmod>2017-03-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zhenyu-liao.github.io/talk/ICASSP17/</loc>
+    <loc>https://zhenyu-liao.github.io/talk/icassp17/</loc>
     <lastmod>2017-03-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zhenyu-liao.github.io/publication/RMT4ELM-AAP/</loc>
+    <loc>https://zhenyu-liao.github.io/publication/rmt4elm-aap/</loc>
     <lastmod>2017-02-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zhenyu-liao.github.io/publication/RMT4LSSVM-JMLR/</loc>
+    <loc>https://zhenyu-liao.github.io/publication/rmt4lssvm-jmlr/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zhenyu-liao.github.io/publication/RMT4LSSVM-ICASSP/</loc>
+    <loc>https://zhenyu-liao.github.io/publication/rmt4lssvm-icassp/</loc>
     <lastmod>2016-10-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -59,6 +60,11 @@
   </url>
   
   <url>
+    <loc>https://zhenyu-liao.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://zhenyu-liao.github.io/home/</loc>
     <lastmod>2016-04-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -66,12 +72,18 @@
   
   <url>
     <loc>https://zhenyu-liao.github.io/publication_types/</loc>
+    <lastmod>2017-03-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://zhenyu-liao.github.io/publication/</loc>
     <lastmod>2017-03-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhenyu-liao.github.io/tags/</loc>
     <priority>0</priority>
   </url>
   
