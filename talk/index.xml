@@ -7,8 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Zhenyu Liao</copyright>
-    <lastBuildDate>Thu, 09 Mar 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 Sep 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="/talk/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Colloque GRETSI&#39;17</title>
+      <link>https://zhenyu-liao.github.io/talk/gretsi17/</link>
+      <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhenyu-liao.github.io/talk/gretsi17/</guid>
+      <description>&lt;p&gt;I will be presenting our work about &lt;strong&gt;Random Feature Maps&lt;/strong&gt; at Colloque GRETSI&amp;rsquo;17 this September!&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>ICASSP&#39;17: Lecture section: Deep Learning IV</title>
