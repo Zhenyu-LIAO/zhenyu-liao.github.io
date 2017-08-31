@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Recent Publications</title>
+      <link>https://zhenyu-liao.github.io/publications/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhenyu-liao.github.io/publications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Colloque GRETSI&#39;17</title>
       <link>https://zhenyu-liao.github.io/talk/gretsi17/</link>
       <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
@@ -46,7 +55,7 @@
     </item>
     
     <item>
-      <title>A Random Matrix Approach to Neural Networks</title>
+      <title>C. Louart, Z. Liao, R. Couillet, A Random Matrix Approach to Neural Networks, (in press) Annals of Applied Probability, 2017.</title>
       <link>https://zhenyu-liao.github.io/publication/rmt4elm-aap/</link>
       <pubDate>Fri, 17 Feb 2017 00:00:00 +0000</pubDate>
       
