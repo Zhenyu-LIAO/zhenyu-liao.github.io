@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Zhenyu Liao</copyright>
     <lastBuildDate>Tue, 05 Sep 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/talk/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://zhenyu-liao.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Colloque GRETSI&#39;17</title>
@@ -16,8 +18,7 @@
       <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://zhenyu-liao.github.io/talk/gretsi17/</guid>
-      <description>&lt;p&gt;I will be presenting our work about &lt;strong&gt;Random Feature Maps&lt;/strong&gt; at Colloque GRETSI&amp;rsquo;17 this September!&lt;/p&gt;
-</description>
+      <description>I will be presenting our work about Random Feature Maps at Colloque GRETSI&amp;rsquo;17 this September!</description>
     </item>
     
     <item>
@@ -26,14 +27,10 @@
       <pubDate>Thu, 09 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>https://zhenyu-liao.github.io/talk/icassp17/</guid>
-      <description>&lt;p&gt;Time: Thursday, March 9, 13:30 - 15:30&lt;/p&gt;
-
-&lt;p&gt;Location: Lecture Room 6&lt;/p&gt;
-
-&lt;p&gt;Here is the link to this four-paper conference &lt;a href=&#34;../../pdf/RMT4LSSVM-ICASSP.pdf&#34;&gt;paper&lt;/a&gt;. A extended journal version which contains all proof in detail is available &lt;a href=&#34;../../pdf/RMT4LSSVM-JMLR.pdf&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The slides presented on ICASSP 2017 is available &lt;a href=&#34;../../pdf/RMT4LSSVM-ICASSP-slides.pdf&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>Time: Thursday, March 9, 13:30 - 15:30
+Location: Lecture Room 6
+Here is the link to this four-paper conference paper. A extended journal version which contains all proof in detail is available here.
+The slides presented on ICASSP 2017 is available here.</description>
     </item>
     
   </channel>
