@@ -15,7 +15,7 @@
     <url>
     
       <loc>https://zhenyu-liao.github.io/talk/gretsi17/</loc>
-      <lastmod>2017-09-05T00:00:00+00:00</lastmod>
+      <lastmod>2017-09-05T00:00:00+02:00</lastmod>
     </url>
     
   
@@ -33,7 +33,7 @@
     <url>
     
       <loc>https://zhenyu-liao.github.io/talk/icassp17/</loc>
-      <lastmod>2017-03-09T00:00:00+00:00</lastmod>
+      <lastmod>2017-03-09T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -51,6 +51,15 @@
     <url>
     
       <loc>https://zhenyu-liao.github.io/publication/rmt4lssvm-jmlr/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://zhenyu-liao.github.io/talk/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -118,16 +127,6 @@
     <url>
     
       <loc>https://zhenyu-liao.github.io/tags/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://zhenyu-liao.github.io/talk/</loc>
-      <lastmod>2017-09-05T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
