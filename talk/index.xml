@@ -33,6 +33,16 @@ The advent of the Big Data era has triggered a renewed interest for machine lear
     </item>
     
     <item>
+      <title>Two Long talks at ICML 2018</title>
+      <link>https://zhenyu-liao.github.io/talk/icml18/</link>
+      <pubDate>Sun, 03 Sep 2017 00:00:00 +0200</pubDate>
+      
+      <guid>https://zhenyu-liao.github.io/talk/icml18/</guid>
+      <description>I will be presenting our works on Random Feature-based Clustering as well as Gradient Descent Dynamics at ICML 2018 this July, please find the two papers as follows:
+ [On the Spectrum of Random Features Maps of High Dimensional Data] and the slides here [The Dynamics of Learning: A Random Matrix Approach] and the slides here.  </description>
+    </item>
+    
+    <item>
       <title>ICASSP&#39;17: Lecture section: Deep Learning IV</title>
       <link>https://zhenyu-liao.github.io/talk/icassp17/</link>
       <pubDate>Thu, 09 Mar 2017 00:00:00 +0100</pubDate>

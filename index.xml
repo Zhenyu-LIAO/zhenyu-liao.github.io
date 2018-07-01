@@ -48,6 +48,21 @@
     </item>
     
     <item>
+      <title>Two Long talks at ICML 2018</title>
+      <link>https://zhenyu-liao.github.io/talk/icml18/</link>
+      <pubDate>Sun, 03 Sep 2017 00:00:00 +0200</pubDate>
+      
+      <guid>https://zhenyu-liao.github.io/talk/icml18/</guid>
+      <description>&lt;p&gt;I will be presenting our works on &lt;strong&gt;Random Feature-based Clustering&lt;/strong&gt; as well as &lt;strong&gt;Gradient Descent Dynamics&lt;/strong&gt; at ICML 2018 this July, please find the two papers as follows:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://zhenyu-liao.github.io/pdf/rfm_icml2018.pdf&#34; target=&#34;_blank&#34;&gt;[On the Spectrum of Random Features Maps of High Dimensional Data]&lt;/a&gt; and the slides &lt;a href=&#34;https://zhenyu-liao.github.io/pdf/rfm_icml2018_pre.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zhenyu-liao.github.io/pdf/gdd_icml2018.pdf&#34; target=&#34;_blank&#34;&gt;[The Dynamics of Learning: A Random Matrix Approach]&lt;/a&gt; and the slides &lt;a href=&#34;https://zhenyu-liao.github.io/pdf/gdd_icml2018_pre.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Une Analyse des Méthodes de Projections Aléatoires par la Théorie des Matrices Aléatoires (in French)</title>
       <link>https://zhenyu-liao.github.io/publication/rmt4elm-gretsi/</link>
       <pubDate>Tue, 21 Mar 2017 00:00:00 +0000</pubDate>
