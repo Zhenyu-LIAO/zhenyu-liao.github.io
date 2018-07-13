@@ -28,8 +28,9 @@
       
       <guid>https://zhenyu-liao.github.io/talk/eusipco18/</guid>
       <description>I will be giving a tutorial at the 26th European Signal Processing Conference (EUSIPCO&amp;rsquo;18) in Rome, the Eternal City, Italy, together with my Ph.D. supervisor Prof. Romain Couillet and my colleague Xiaoyi Mai on the topic of &amp;ldquo;Random Matrix Advances in Machine Learning and Neural Nets&amp;rdquo;.
+For more information please visit EUSIPCO&amp;rsquo;18.
 Abstract
-The advent of the Big Data era has triggered a renewed interest for machine learning and (deep) neural networks. These methods however suffer a double plague (i) as they involve nonlinear operators, they are difficult to fathom and offer little guarantees, limits, and hyperparameter control and (ii) they were often developed from small dimensional intuitions and tend to be inefficient to deal with large dimensional datasets.</description>
+The advent of the Big Data era has triggered a renewed interest for machine learning and (deep) neural networks.</description>
     </item>
     
     <item>

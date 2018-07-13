@@ -37,6 +37,8 @@
       <guid>https://zhenyu-liao.github.io/talk/eusipco18/</guid>
       <description>&lt;p&gt;I will be giving a tutorial at the 26th European Signal Processing Conference (EUSIPCO&amp;rsquo;18) in Rome, the Eternal City, Italy, together with my Ph.D. supervisor &lt;a href=&#34;http://romaincouillet.hebfree.org/&#34; target=&#34;_blank&#34;&gt;Prof. Romain Couillet&lt;/a&gt; and my colleague &lt;a href=&#34;http://www.l2s.centralesupelec.fr/perso/xiaoyi.mai&#34; target=&#34;_blank&#34;&gt;Xiaoyi Mai&lt;/a&gt; on the topic of &amp;ldquo;Random Matrix Advances in Machine Learning and Neural Nets&amp;rdquo;.&lt;/p&gt;
 
+&lt;p&gt;For more information please visit &lt;a href=&#34;http://www.eusipco2018.org/tutorials.php&#34; target=&#34;_blank&#34;&gt;EUSIPCO&amp;rsquo;18&lt;/a&gt;.&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;The advent of the Big Data era has triggered a renewed interest for machine learning and (deep) neural networks. These methods however suffer a double plague (i) as they involve nonlinear operators, they are difficult to fathom and offer little guarantees, limits, and hyperparameter control and (ii) they were often developed from small dimensional intuitions and tend to be inefficient to deal with large dimensional datasets. Recent advances in random matrix theory manage to simultaneously deal with both problems; in assuming both dimension and size of the datasets to be simultaneously large, concentration phenomena arise that allow for a renewed understanding and the possibility to control and improve machine learning approaches, sometimes opening the door to completely new paradigms.&lt;/p&gt;
