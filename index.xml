@@ -45,7 +45,7 @@
 
 &lt;p&gt;The objective of the tutorial is twofold. It will first provide a simple and didactic introduction to the basic notions of random matrix theory for the audience to get accustomed to the insights and necessary tools of the domain (∼1h). In a second longer part (∼2h), recent advances in applied random matrix theory to machine learning (kernel methods, classification and clustering, semi-supervised learning, etc.) as well as to neural networks (random features and extreme learning machines, backpropagation dynamics) will be investigated. In the end, the audience will get a good grasp on the non-trivial phenomena arising when dealing with large dimensional datasets and on the solutions and methods offered by random matrix theory to embrace large dimensional machine learning.&lt;/p&gt;
 
-&lt;p&gt;Please find the slides &lt;a href=&#34;../../pdf/Mid_term_presentation_LIAO.pdf&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Please find the slides &lt;a href=&#34;../../pdf/tutorial_Eusipco_handout.pdf&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
