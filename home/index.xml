@@ -6,8 +6,8 @@
     <description>Recent content in Homes on Zhenyu&#39;s page</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://zhenyu-liao.github.io/home/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,10 +15,10 @@
     <item>
       <title></title>
       <link>https://zhenyu-liao.github.io/home/about/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://zhenyu-liao.github.io/home/about/</guid>
-      <description>Bio Zhenyu Liao is a second year Ph.D. student, under the supervision of Prof. Romain Couillet and Prof. Yacine Chitour, with the Signals and Statistics group of Laboratoire des signaux et systèmes, CentraleSupélec, University Paris-Saclay. He received his B.Sc degree in Optical &amp;amp; Electronic Information from Huazhong University of Science &amp;amp; Technology, China and his M.Sc. degree in Signal and Image Processing from CentraleSupélec/Paris-Sud University, France in 2016.
+      <description>Bio Zhenyu Liao is a third year Ph.D. student, under the supervision of Prof. Romain Couillet and Prof. Yacine Chitour, with the Signals and Statistics group of Laboratoire des signaux et systèmes, CentraleSupélec, University Paris-Saclay. He received his B.Sc degree in Optical &amp;amp; Electronic Information from Huazhong University of Science &amp;amp; Technology, China and his M.Sc. degree in Signal and Image Processing from CentraleSupélec/Paris-Sud University, France in 2016.
 Curriculum vitae: Here is my CV in English.</description>
     </item>
     
@@ -38,7 +38,7 @@ Curriculum vitae: Here is my CV in English.</description>
       
       <guid>https://zhenyu-liao.github.io/home/publication/</guid>
       <description>Conferences:
- X. Mai, Z. Liao, &amp;ldquo;High Dimensional Classification via Empirical Risk Minimization: Improvements and Optimality&amp;rdquo;, (submitted to) The 36th International Conference on Machine Learning (ICML&amp;rsquo;19), Long Beach, CA, USA. [preprint]
+ X. Mai, Z. Liao, &amp;ldquo;High Dimensional Classification via Empirical Risk Minimization: Improvements and Optimality&amp;rdquo;, (submitted to) The 36th International Conference on Machine Learning (ICML’19), Long Beach, CA, USA. [preprint]
  X. Mai, Z. Liao, R. Couillet, &amp;ldquo;A Large Scale Analysis of Logistic Regression: Asymptotic Performance and New Insights&amp;rdquo;, (submitted to) IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP&amp;rsquo;19), Brighton, UK, 2019. [preprint]
  R. Couillet, Z. Liao, X.</description>
     </item>
