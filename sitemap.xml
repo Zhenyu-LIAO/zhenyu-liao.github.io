@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://zhenyu-liao.github.io/posts/</loc>
+    <lastmod>2018-06-06T03:01:05+06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://zhenyu-liao.github.io/activities/</loc>
     <lastmod>2018-06-06T03:00:53+06:00</lastmod>
   </url>
@@ -49,12 +54,6 @@
   
   <url>
     <loc>https://zhenyu-liao.github.io/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhenyu-liao.github.io/posts/</loc>
-    <lastmod>2018-06-06T03:00:53+06:00</lastmod>
     <priority>0</priority>
   </url>
   

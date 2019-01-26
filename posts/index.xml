@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Zhenyu&#39;s page</title>
+    <title>All on Zhenyu&#39;s page</title>
     <link>https://zhenyu-liao.github.io/posts/</link>
-    <description>Recent content in Posts on Zhenyu&#39;s page</description>
+    <description>Recent content in All on Zhenyu&#39;s page</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Jun 2018 03:00:53 +0600</lastBuildDate>
+    <lastBuildDate>Wed, 06 Jun 2018 03:01:05 +0600</lastBuildDate>
     
 	<atom:link href="https://zhenyu-liao.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
