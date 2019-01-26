@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zhenyu&#39;s Page on Zhenyu&#39;s page</title>
-    <link>http://yourwebsite.com/</link>
+    <link>https://zhenyu-liao.github.io/</link>
     <description>Recent content in Zhenyu&#39;s Page on Zhenyu&#39;s page</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 06 Jun 2018 03:00:53 +0600</lastBuildDate>
     
-	<atom:link href="http://yourwebsite.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://zhenyu-liao.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Activities</title>
-      <link>http://yourwebsite.com/activities/</link>
+      <link>https://zhenyu-liao.github.io/activities/</link>
       <pubDate>Wed, 06 Jun 2018 03:00:53 +0600</pubDate>
       
-      <guid>http://yourwebsite.com/activities/</guid>
+      <guid>https://zhenyu-liao.github.io/activities/</guid>
       <description> 
 Teaching I am a teaching assistant at CentraleSupélec, Signal and Statistics department, for the following courses:
  2017- 2018: Lab work: Signals and systems 1. Together with Prof. LE BRUSQUET. 54 hours in total.  Reviewing I&amp;rsquo;m reviewing for
@@ -25,19 +25,19 @@ Teaching I am a teaching assistant at CentraleSupélec, Signal and Statistics de
     
     <item>
       <title>Colloque GRETSI&#39;17</title>
-      <link>http://yourwebsite.com/posts/gretsi17/</link>
+      <link>https://zhenyu-liao.github.io/posts/gretsi17/</link>
       <pubDate>Wed, 06 Jun 2018 03:00:53 +0600</pubDate>
       
-      <guid>http://yourwebsite.com/posts/gretsi17/</guid>
+      <guid>https://zhenyu-liao.github.io/posts/gretsi17/</guid>
       <description>I will be presenting our work about Random Feature Maps at Colloque GRETSI&amp;rsquo;17 this September at Juan Les Pins, France. The slides (in French) are available here.</description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>http://yourwebsite.com/contact/</link>
+      <link>https://zhenyu-liao.github.io/contact/</link>
       <pubDate>Wed, 06 Jun 2018 03:00:53 +0600</pubDate>
       
-      <guid>http://yourwebsite.com/contact/</guid>
+      <guid>https://zhenyu-liao.github.io/contact/</guid>
       <description>E-mail: zhenyu.liao@l2s.centralesupelec.fr
 Tel: (+33)6-67-81-50-05
 Direction: Office A5-03, Breguet, 3 rue Joliot Curie, 91192 Gif sur Yvette, France</description>
@@ -45,10 +45,10 @@ Direction: Office A5-03, Breguet, 3 rue Joliot Curie, 91192 Gif sur Yvette, Fran
     
     <item>
       <title>ICASSP&#39;17: Lecture section: Deep Learning</title>
-      <link>http://yourwebsite.com/posts/icassp17/</link>
+      <link>https://zhenyu-liao.github.io/posts/icassp17/</link>
       <pubDate>Wed, 06 Jun 2018 03:00:53 +0600</pubDate>
       
-      <guid>http://yourwebsite.com/posts/icassp17/</guid>
+      <guid>https://zhenyu-liao.github.io/posts/icassp17/</guid>
       <description>I will be presenting my work on LS-SVM at the 42nd IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP 2017), New Orleans, USA.
 Here is the link to this four-paper conference paper. A extended journal version which contains all proof in detail is available here.
 The slides presented on ICASSP 2017 is available here.</description>
@@ -56,19 +56,19 @@ The slides presented on ICASSP 2017 is available here.</description>
     
     <item>
       <title>Ph.D. Mid-Term Evaluation</title>
-      <link>http://yourwebsite.com/posts/phd_mid/</link>
+      <link>https://zhenyu-liao.github.io/posts/phd_mid/</link>
       <pubDate>Wed, 06 Jun 2018 03:00:53 +0600</pubDate>
       
-      <guid>http://yourwebsite.com/posts/phd_mid/</guid>
+      <guid>https://zhenyu-liao.github.io/posts/phd_mid/</guid>
       <description>I&amp;rsquo;ve just finished my Ph.D. mid-term evaluation at CentraleSupelec. Here is the link of my mid-term report as well the slides.</description>
     </item>
     
     <item>
       <title>Publications</title>
-      <link>http://yourwebsite.com/publications/</link>
+      <link>https://zhenyu-liao.github.io/publications/</link>
       <pubDate>Wed, 06 Jun 2018 03:00:53 +0600</pubDate>
       
-      <guid>http://yourwebsite.com/publications/</guid>
+      <guid>https://zhenyu-liao.github.io/publications/</guid>
       <description>Conferences:  X. Mai, Z. Liao, &amp;ldquo;High Dimensional Classification via Empirical Risk Minimization: Improvements and Optimality&amp;rdquo;, (submitted to) The 36th International Conference on Machine Learning (ICML’19), Long Beach, CA, USA. [preprint]
  X. Mai, Z. Liao, R. Couillet, &amp;ldquo;A Large Scale Analysis of Logistic Regression: Asymptotic Performance and New Insights&amp;rdquo;, (submitted to) IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP&amp;rsquo;19), Brighton, UK, 2019. [preprint]
  R. Couillet, Z.</description>
@@ -76,10 +76,10 @@ The slides presented on ICASSP 2017 is available here.</description>
     
     <item>
       <title>Tutorial at EUSIPCO’18: Random Matrix Advances in Machine Learning and Neural Nets</title>
-      <link>http://yourwebsite.com/posts/eusipco18/</link>
+      <link>https://zhenyu-liao.github.io/posts/eusipco18/</link>
       <pubDate>Wed, 06 Jun 2018 03:00:53 +0600</pubDate>
       
-      <guid>http://yourwebsite.com/posts/eusipco18/</guid>
+      <guid>https://zhenyu-liao.github.io/posts/eusipco18/</guid>
       <description>I will be giving a tutorial at the 26th European Signal Processing Conference (EUSIPCO&amp;rsquo;18) in Rome, the Eternal City, Italy, together with my Ph.D. supervisor Prof. Romain Couillet and my colleague Xiaoyi Mai on the topic of &amp;ldquo;Random Matrix Advances in Machine Learning and Neural Nets&amp;rdquo;.
 For more information please visit EUSIPCO&amp;rsquo;18.
 Abstract
@@ -88,10 +88,10 @@ The advent of the Big Data era has triggered a renewed interest for machine lear
     
     <item>
       <title>Two long talks at ICML&#39;18</title>
-      <link>http://yourwebsite.com/posts/icml18/</link>
+      <link>https://zhenyu-liao.github.io/posts/icml18/</link>
       <pubDate>Wed, 06 Jun 2018 03:00:53 +0600</pubDate>
       
-      <guid>http://yourwebsite.com/posts/icml18/</guid>
+      <guid>https://zhenyu-liao.github.io/posts/icml18/</guid>
       <description>I will be presenting our works on Random Feature-based Clustering as well as Gradient Descent Dynamics at ICML 2018 this July, please find the two papers as follows:
  [On the Spectrum of Random Features Maps of High Dimensional Data] and the slides here [The Dynamics of Learning: A Random Matrix Approach] and the slides here.  </description>
     </item>
