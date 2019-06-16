@@ -1,0 +1,5 @@
+To-do list:
+
+* add projects/grants
+* add books
+* add student information

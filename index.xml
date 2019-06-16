@@ -64,7 +64,7 @@ The slides are available here.</description>
     </item>
     
     <item>
-      <title>EUSIPCO&#39;18 tutorial</title>
+      <title>Ph.D. Mid-term</title>
       <link>https://zhenyu-liao.github.io/posts/phd_mid/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
@@ -88,9 +88,7 @@ Education■ B.Sc. Optical &amp;amp; Electronic Information, HUST, 2010-2014■ 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zhenyu-liao.github.io/activities/</guid>
-      <description> Teaching I am a teaching assistant at CentraleSupélec, Signal and Statistics department, for the following courses:
- 2017- 2018: Lab work: Signals and systems 1, with Prof. LE BRUSQUET. 54 hours in total.  Reviewing I&amp;rsquo;m reviewing for
- Neural Information Processing Systems International Conference of Machine Learning IEEE Transactions on Signal Processing Neural Processing Letters  </description>
+      <description>Talks  Invited talk on &amp;ldquo;Recent Advances in Random Matrix Theory for Machine Learning and Neural Nets&amp;rdquo;, workshop of the Matrix series on &amp;ldquo;Random matrix theory faces information era&amp;rdquo;, Kraków, Poland, May, 2019. Invited talk on &amp;ldquo;Dynamical aspects of Deep Learning&amp;rdquo; (with Y. Chitour), Séminaire d&amp;rsquo;Automatique du plateau de Saclay of iCODE, Paris, France, 2019. See slides here and paper here. Invited talk on &amp;ldquo;Recent Advances in Random Matrix for Neural Networks&amp;rdquo;, workshop on deep learning theory, Shanghai Jiao Tong University, China, 2018.</description>
     </item>
     
     <item>
@@ -100,8 +98,8 @@ Education■ B.Sc. Optical &amp;amp; Electronic Information, HUST, 2010-2014■ 
       
       <guid>https://zhenyu-liao.github.io/publications/</guid>
       <description>Conferences:  Z.Liao, R. Couillet, &amp;ldquo;Inner-product Kernels are Asymptotically Equivalent to Binary Discrete Kernels&amp;rdquo;, (submitted to) The 33rd Conference on Neural Information Processing Systems (NeurIPS&amp;rsquo;19), Vancouver, Canada, 2019.
- X. Mai, Z. Liao, R. Couillet, &amp;ldquo;A Large Scale Analysis of Logistic Regression: Asymptotic Performance and New Insights&amp;rdquo;, IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP&amp;rsquo;19), Brighton, UK, 2019. [poster]
- R. Couillet, Z. Liao, X. Mai, &amp;ldquo;Classification Asymptotics in the Random Matrix Regime&amp;rdquo;, European Signal Processing Conference (EUSIPCO&amp;rsquo;18), Rome, Italy, 2018.</description>
+ X. Mai, Z. Liao, R. Couillet, &amp;ldquo;A Large Scale Analysis of Logistic Regression: Asymptotic Performance and New Insights&amp;rdquo;, 2019 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP&amp;rsquo;19), Brighton, UK, 2019. [poster]
+ R. Couillet, Z. Liao, X. Mai, &amp;ldquo;Classification Asymptotics in the Random Matrix Regime&amp;rdquo;, The 26th European Signal Processing Conference (EUSIPCO&amp;rsquo;18), Rome, Italy, 2018.</description>
     </item>
     
   </channel>
