@@ -1,0 +1,475 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{liao2019innerproduct}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=b6024c7c88c30681c62fcbdc5a51f552}{%
+           family={\textbf{Liao}},
+           familyi={L\bibinitperiod},
+           given={\textbf{Zhenyu}},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f284e86fcc26c16cd4835cc2fdbf0010}{%
+           family={Couillet},
+           familyi={C\bibinitperiod},
+           given={Romain},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c3f729cf436955e6c80af8d235b263f7}
+      \strng{fullhash}{c3f729cf436955e6c80af8d235b263f7}
+      \strng{bibnamehash}{c3f729cf436955e6c80af8d235b263f7}
+      \strng{authorbibnamehash}{c3f729cf436955e6c80af8d235b263f7}
+      \strng{authornamehash}{c3f729cf436955e6c80af8d235b263f7}
+      \strng{authorfullhash}{c3f729cf436955e6c80af8d235b263f7}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{(submitted to) The 33rd Conference on Neural Information Processing Systems (NeurIPS'19)}
+      \field{title}{Inner-product Kernels are Asymptotically Equivalent to Binary Discrete Kernels}
+      \field{year}{2019}
+      \true{nocite}
+    \endentry
+    \entry{mai2019large}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=4a0f803afdd80071365814cfb2453a46}{%
+           family={Mai},
+           familyi={M\bibinitperiod},
+           given={Xiaoyi},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b6024c7c88c30681c62fcbdc5a51f552}{%
+           family={\textbf{Liao}},
+           familyi={L\bibinitperiod},
+           given={\textbf{Zhenyu}},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f284e86fcc26c16cd4835cc2fdbf0010}{%
+           family={Couillet},
+           familyi={C\bibinitperiod},
+           given={Romain},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{23a1f0ff24dda48213737435efe8d0d9}
+      \strng{fullhash}{23a1f0ff24dda48213737435efe8d0d9}
+      \strng{bibnamehash}{23a1f0ff24dda48213737435efe8d0d9}
+      \strng{authorbibnamehash}{23a1f0ff24dda48213737435efe8d0d9}
+      \strng{authornamehash}{23a1f0ff24dda48213737435efe8d0d9}
+      \strng{authorfullhash}{23a1f0ff24dda48213737435efe8d0d9}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2019 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP'19)}
+      \field{issn}{2379-190X}
+      \field{month}{5}
+      \field{title}{A Large Scale Analysis of Logistic Regression: Asymptotic Performance and New Insights}
+      \field{year}{2019}
+      \true{nocite}
+      \field{pages}{3357\bibrangedash 3361}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/ICASSP.2019.8683376
+      \endverb
+    \endentry
+    \entry{couillet2018classification}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=f284e86fcc26c16cd4835cc2fdbf0010}{%
+           family={Couillet},
+           familyi={C\bibinitperiod},
+           given={Romain},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b6024c7c88c30681c62fcbdc5a51f552}{%
+           family={\textbf{Liao}},
+           familyi={L\bibinitperiod},
+           given={\textbf{Zhenyu}},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=4a0f803afdd80071365814cfb2453a46}{%
+           family={Mai},
+           familyi={M\bibinitperiod},
+           given={Xiaoyi},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{f29d386f0716fcbb851beb8c8417220e}
+      \strng{fullhash}{f29d386f0716fcbb851beb8c8417220e}
+      \strng{bibnamehash}{f29d386f0716fcbb851beb8c8417220e}
+      \strng{authorbibnamehash}{f29d386f0716fcbb851beb8c8417220e}
+      \strng{authornamehash}{f29d386f0716fcbb851beb8c8417220e}
+      \strng{authorfullhash}{f29d386f0716fcbb851beb8c8417220e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2018 The 26th European Signal Processing Conference (EUSIPCO'18)}
+      \field{issn}{2076-1465}
+      \field{month}{9}
+      \field{title}{Classification Asymptotics in the Random Matrix Regime}
+      \field{year}{2018}
+      \true{nocite}
+      \field{pages}{1875\bibrangedash 1879}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.23919/EUSIPCO.2018.8553034
+      \endverb
+    \endentry
+    \entry{liao2018dynamics}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=b6024c7c88c30681c62fcbdc5a51f552}{%
+           family={\textbf{Liao}},
+           familyi={L\bibinitperiod},
+           given={\textbf{Zhenyu}},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f284e86fcc26c16cd4835cc2fdbf0010}{%
+           family={Couillet},
+           familyi={C\bibinitperiod},
+           given={Romain},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {PMLR}%
+      }
+      \strng{namehash}{c3f729cf436955e6c80af8d235b263f7}
+      \strng{fullhash}{c3f729cf436955e6c80af8d235b263f7}
+      \strng{bibnamehash}{c3f729cf436955e6c80af8d235b263f7}
+      \strng{authorbibnamehash}{c3f729cf436955e6c80af8d235b263f7}
+      \strng{authornamehash}{c3f729cf436955e6c80af8d235b263f7}
+      \strng{authorfullhash}{c3f729cf436955e6c80af8d235b263f7}
+      \field{extraname}{2}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 35th International Conference on Machine Learning (ICML'18)}
+      \field{month}{7}
+      \field{title}{The Dynamics of Learning: A Random Matrix Approach}
+      \field{volume}{80}
+      \field{year}{2018}
+      \true{nocite}
+      \field{pages}{3072\bibrangedash 3081}
+      \range{pages}{10}
+      \verb{urlraw}
+      \verb http://proceedings.mlr.press/v80/liao18b.html
+      \endverb
+      \verb{url}
+      \verb http://proceedings.mlr.press/v80/liao18b.html
+      \endverb
+    \endentry
+    \entry{liao2018spectrum}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=b6024c7c88c30681c62fcbdc5a51f552}{%
+           family={\textbf{Liao}},
+           familyi={L\bibinitperiod},
+           given={\textbf{Zhenyu}},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f284e86fcc26c16cd4835cc2fdbf0010}{%
+           family={Couillet},
+           familyi={C\bibinitperiod},
+           given={Romain},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {PMLR}%
+      }
+      \strng{namehash}{c3f729cf436955e6c80af8d235b263f7}
+      \strng{fullhash}{c3f729cf436955e6c80af8d235b263f7}
+      \strng{bibnamehash}{c3f729cf436955e6c80af8d235b263f7}
+      \strng{authorbibnamehash}{c3f729cf436955e6c80af8d235b263f7}
+      \strng{authornamehash}{c3f729cf436955e6c80af8d235b263f7}
+      \strng{authorfullhash}{c3f729cf436955e6c80af8d235b263f7}
+      \field{extraname}{3}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 35th International Conference on Machine Learning (ICML'18)}
+      \field{month}{7}
+      \field{title}{On the Spectrum of Random Features Maps of High Dimensional Data}
+      \field{volume}{80}
+      \field{year}{2018}
+      \true{nocite}
+      \field{pages}{3063\bibrangedash 3071}
+      \range{pages}{9}
+      \verb{urlraw}
+      \verb http://proceedings.mlr.press/v80/liao18a.html
+      \endverb
+      \verb{url}
+      \verb http://proceedings.mlr.press/v80/liao18a.html
+      \endverb
+    \endentry
+    \entry{liao2017random}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=b6024c7c88c30681c62fcbdc5a51f552}{%
+           family={\textbf{Liao}},
+           familyi={L\bibinitperiod},
+           given={\textbf{Zhenyu}},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f284e86fcc26c16cd4835cc2fdbf0010}{%
+           family={Couillet},
+           familyi={C\bibinitperiod},
+           given={Romain},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{c3f729cf436955e6c80af8d235b263f7}
+      \strng{fullhash}{c3f729cf436955e6c80af8d235b263f7}
+      \strng{bibnamehash}{c3f729cf436955e6c80af8d235b263f7}
+      \strng{authorbibnamehash}{c3f729cf436955e6c80af8d235b263f7}
+      \strng{authornamehash}{c3f729cf436955e6c80af8d235b263f7}
+      \strng{authorfullhash}{c3f729cf436955e6c80af8d235b263f7}
+      \field{extraname}{4}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2017 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP'17)}
+      \field{issn}{2379-190X}
+      \field{month}{3}
+      \field{title}{Random Matrices Meet Machine Learning: A Large Dimensional Analysis of LS-SVM}
+      \field{year}{2017}
+      \true{nocite}
+      \field{pages}{2397\bibrangedash 2401}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/ICASSP.2017.7952586
+      \endverb
+    \endentry
+    \entry{mai2019empirical}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=4a0f803afdd80071365814cfb2453a46}{%
+           family={Mai},
+           familyi={M\bibinitperiod},
+           given={Xiaoyi},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b6024c7c88c30681c62fcbdc5a51f552}{%
+           family={\textbf{Liao}},
+           familyi={L\bibinitperiod},
+           given={\textbf{Zhenyu}},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{724ef4574476ba765b01e6232ddaa0cd}
+      \strng{fullhash}{724ef4574476ba765b01e6232ddaa0cd}
+      \strng{bibnamehash}{724ef4574476ba765b01e6232ddaa0cd}
+      \strng{authorbibnamehash}{724ef4574476ba765b01e6232ddaa0cd}
+      \strng{authornamehash}{724ef4574476ba765b01e6232ddaa0cd}
+      \strng{authorfullhash}{724ef4574476ba765b01e6232ddaa0cd}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{(submitted to) IEEE Transactions on Signal Processing}
+      \field{title}{High Dimensional Classification via Empirical Risk Minimization: Improvements and Optimality}
+      \field{year}{2019}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1905.13742
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1905.13742
+      \endverb
+    \endentry
+    \entry{chitour2019geometric}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=c32a764e7d3a97a398b93657e01c26fc}{%
+           family={Chitour},
+           familyi={C\bibinitperiod},
+           given={Yacine},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b6024c7c88c30681c62fcbdc5a51f552}{%
+           family={\textbf{Liao}},
+           familyi={L\bibinitperiod},
+           given={\textbf{Zhenyu}},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f284e86fcc26c16cd4835cc2fdbf0010}{%
+           family={Couillet},
+           familyi={C\bibinitperiod},
+           given={Romain},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9780ff1ef09e612446432b699a38187f}
+      \strng{fullhash}{9780ff1ef09e612446432b699a38187f}
+      \strng{bibnamehash}{9780ff1ef09e612446432b699a38187f}
+      \strng{authorbibnamehash}{9780ff1ef09e612446432b699a38187f}
+      \strng{authornamehash}{9780ff1ef09e612446432b699a38187f}
+      \strng{authorfullhash}{9780ff1ef09e612446432b699a38187f}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{(submitted to) Journal of Differential Equations}
+      \field{title}{A Geometric Approach of Gradient Descent Algorithms in Neural Networks}
+      \field{year}{2019}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1811.03568
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1811.03568
+      \endverb
+    \endentry
+    \entry{liao2019large}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=b6024c7c88c30681c62fcbdc5a51f552}{%
+           family={\textbf{Liao}},
+           familyi={L\bibinitperiod},
+           given={\textbf{Zhenyu}},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f284e86fcc26c16cd4835cc2fdbf0010}{%
+           family={Couillet},
+           familyi={C\bibinitperiod},
+           given={Romain},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{c3f729cf436955e6c80af8d235b263f7}
+      \strng{fullhash}{c3f729cf436955e6c80af8d235b263f7}
+      \strng{bibnamehash}{c3f729cf436955e6c80af8d235b263f7}
+      \strng{authorbibnamehash}{c3f729cf436955e6c80af8d235b263f7}
+      \strng{authornamehash}{c3f729cf436955e6c80af8d235b263f7}
+      \strng{authorfullhash}{c3f729cf436955e6c80af8d235b263f7}
+      \field{extraname}{5}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1053-587X}
+      \field{journaltitle}{IEEE Transactions on Signal Processing}
+      \field{month}{2}
+      \field{number}{4}
+      \field{title}{A Large Dimensional Analysis of Least Squares Support Vector Machines}
+      \field{volume}{67}
+      \field{year}{2019}
+      \true{nocite}
+      \field{pages}{1065\bibrangedash 1074}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/TSP.2018.2889954
+      \endverb
+    \endentry
+    \entry{louart2018random}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=9949a1fa9f9b83081f9782dea4c99415}{%
+           family={Louart},
+           familyi={L\bibinitperiod},
+           given={Cosme},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b6024c7c88c30681c62fcbdc5a51f552}{%
+           family={\textbf{Liao}},
+           familyi={L\bibinitperiod},
+           given={\textbf{Zhenyu}},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f284e86fcc26c16cd4835cc2fdbf0010}{%
+           family={Couillet},
+           familyi={C\bibinitperiod},
+           given={Romain},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Institute of Mathematical Statistics}%
+      }
+      \strng{namehash}{567a5d078c215ce8ad8eb2e4c42d2217}
+      \strng{fullhash}{567a5d078c215ce8ad8eb2e4c42d2217}
+      \strng{bibnamehash}{567a5d078c215ce8ad8eb2e4c42d2217}
+      \strng{authorbibnamehash}{567a5d078c215ce8ad8eb2e4c42d2217}
+      \strng{authornamehash}{567a5d078c215ce8ad8eb2e4c42d2217}
+      \strng{authorfullhash}{567a5d078c215ce8ad8eb2e4c42d2217}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Annals of Applied Probability}
+      \field{month}{4}
+      \field{number}{2}
+      \field{title}{A Random Matrix Approach to Neural Networks}
+      \field{volume}{28}
+      \field{year}{2018}
+      \true{nocite}
+      \field{pages}{1190\bibrangedash 1248}
+      \range{pages}{59}
+      \verb{doi}
+      \verb 10.1214/17-AAP1328
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1214/17-AAP1328
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1214/17-AAP1328
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

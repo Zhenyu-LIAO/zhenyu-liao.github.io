@@ -1,0 +1,24 @@
+[0] Config.pm:304> INFO - This is Biber 2.12
+[0] Config.pm:307> INFO - Logfile is 'liao_CV.blg'
+[54] biber-darwin:315> INFO - === Sun Jun 16, 2019, 19:21:36
+[89] Biber.pm:371> INFO - Reading 'liao_CV.bcf'
+[191] Biber.pm:886> INFO - Using all citekeys in bib section 0
+[208] Biber.pm:4093> INFO - Processing section 0
+[223] Biber.pm:4254> INFO - Looking for bibtex format file 'liao_CV.bib' for section 0
+[226] bibtex.pm:1523> INFO - LaTeX decoding ...
+[248] bibtex.pm:1340> INFO - Found BibTeX data source 'liao_CV.bib'
+[256] Utils.pm:193> WARN - month field 'March' in entry 'liao2017random' is not an integer - this will probably not sort properly.
+[269] Utils.pm:193> WARN - month field 'February' in entry 'liao2019large' is not an integer - this will probably not sort properly.
+[276] Utils.pm:193> WARN - month field 'April' in entry 'louart2018random' is not an integer - this will probably not sort properly.
+[292] Utils.pm:193> WARN - month field 'July' in entry 'liao2018dynamics' is not an integer - this will probably not sort properly.
+[297] Utils.pm:193> WARN - month field 'July' in entry 'liao2018spectrum' is not an integer - this will probably not sort properly.
+[303] Utils.pm:193> WARN - month field 'September' in entry 'couillet2018classification' is not an integer - this will probably not sort properly.
+[311] Utils.pm:193> WARN - month field 'May' in entry 'mai2019large' is not an integer - this will probably not sort properly.
+[313] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/pd/fm2__w_14f95wl8xlndfrybr0000gn/T/FH4aI1QWbr/liao_CV.bib_39124.utf8, line 69, warning: 11 characters of junk seen at toplevel
+[337] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[337] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[337] Biber.pm:3921> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[337] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
+[360] bbl.pm:636> INFO - Writing 'liao_CV.bbl' with encoding 'UTF-8'
+[371] bbl.pm:739> INFO - Output to liao_CV.bbl
+[371] Biber.pm:110> INFO - WARNINGS: 8
