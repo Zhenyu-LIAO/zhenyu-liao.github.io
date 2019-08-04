@@ -73,16 +73,6 @@ The slides are available here.</description>
     </item>
     
     <item>
-      <title></title>
-      <link>https://zhenyu-liao.github.io/slides/self_intro/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zhenyu-liao.github.io/slides/self_intro/</guid>
-      <description>Self Introduction - By Zhenyu LiaoSelf IntroductionZhenyu Liao (廖振宇), CentraleSupelec, Paris-Sacaly, France.ResearchMy research interests are broadly in machine learning, random matrix theory and statistics.Tutorial and invited talks■ Tutorial at the 26th European Signal Processing Conference (EUSIPCO’18), Roma, Italy, 2018.■ Invited talks at SJTU, HUAWEI, iCODE, Matrix, SUFE.Paper reviewNeurIPS, ICML, IEEE TSP, NPL.
-Education■ B.Sc. Optical &amp;amp; Electronic Information, HUST, 2010-2014■ M.Sc. Signal and Image Processing, CentraleSupelec/Paris-Sud, 2014-2016■ Ph.D. Statistics and Computer Science, CentraleSupelec, 2016-2019Visit my personal website for more information.</description>
-    </item>
-    
-    <item>
       <title>Activities</title>
       <link>https://zhenyu-liao.github.io/activities/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -99,7 +89,7 @@ Education■ B.Sc. Optical &amp;amp; Electronic Information, HUST, 2010-2014■ 
       <guid>https://zhenyu-liao.github.io/publications/</guid>
       <description>Conferences:  Z.Liao, R. Couillet, &amp;ldquo;Inner-product Kernels are Asymptotically Equivalent to Binary Discrete Kernels&amp;rdquo;, (submitted to) The 33rd Conference on Neural Information Processing Systems (NeurIPS&amp;rsquo;19), Vancouver, Canada, 2019.
  X. Mai, Z. Liao, R. Couillet, &amp;ldquo;A Large Scale Analysis of Logistic Regression: Asymptotic Performance and New Insights&amp;rdquo;, 2019 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP&amp;rsquo;19), Brighton, UK, 2019. [poster]
- R. Couillet, Z. Liao, X. Mai, &amp;ldquo;Classification Asymptotics in the Random Matrix Regime&amp;rdquo;, The 26th European Signal Processing Conference (EUSIPCO&amp;rsquo;18), Rome, Italy, 2018.</description>
+ R. Couillet, Z. Liao, X. Mai, &amp;ldquo;Classification Asymptotics in the Random Matrix Regime&amp;rdquo;, The 26th European Signal Processing Conference (EUSIPCO&amp;rsquo;18) (invited paper to special session), Rome, Italy, 2018.</description>
     </item>
     
   </channel>

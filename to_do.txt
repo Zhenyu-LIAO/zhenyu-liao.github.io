@@ -1,7 +1,0 @@
-To-do list:
-
-* add projects/grants
-* add books/chapters
-* add student information
-* code blocks?
-* **Z.Liao**, R. Couillet, "[On Inner-Product Kernels Of High Dimensional Data](../pdf/conf/inner_prod_CAMSAP.pdf)", (submitted to) *IEEE International Workshop on Computational Advances in Multi-Sensor Adaptive Processing (CAMSAP'19)*, Guadeloupe, France, 2019
