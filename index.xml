@@ -78,7 +78,7 @@ The slides are available here.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zhenyu-liao.github.io/activities/</guid>
-      <description>Talks  Invited talk on &amp;ldquo;RMT viewpoint of learning with gradient descent&amp;rdquo; at DIMACS workshop on Randomized Numerical Linear Algebra, Statistics, and Optimization, Rutgers University, USA, 16-18 September, 2019. See video on Youtube here. Invited talk on &amp;ldquo;Recent Advances in Random Matrix Theory for Machine Learning and Neural Nets&amp;rdquo;, workshop of the Matrix series on &amp;ldquo;Random matrix theory faces information era&amp;rdquo;, Kraków, Poland, 29 April - 2 May, 2019. Invited talk on &amp;ldquo;Dynamical aspects of Deep Learning&amp;rdquo; (with Y.</description>
+      <description>Talks  Invited talk on &amp;ldquo;Dynamical aspects of learning linear neural networks&amp;rdquo; at Second Symposium on Machine Learning and Dynamical Systems, Fields Institute, Toronto, September, 2020. See slides and video. Invited talk on &amp;ldquo;Random matrix advances in large dimensional machine learning&amp;rdquo; at Random Matrices and Complex Data Analysis Workshop, Shanghai University of Finance and Economics, Shanghai, China, 10-12 December, 2019. See slides here. Invited talk on &amp;ldquo;RMT viewpoint of learning with gradient descent&amp;rdquo; at DIMACS workshop on Randomized Numerical Linear Algebra, Statistics, and Optimization, Rutgers University, USA, 16-18 September, 2019.</description>
     </item>
     
     <item>
@@ -87,10 +87,8 @@ The slides are available here.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zhenyu-liao.github.io/publications/</guid>
-      <description>Preprints:   M. Dereziński, F. Liang, Z. Liao, M. W. Mahoney, &amp;ldquo;Precise expressions for random projections: Low-rank approximation and randomized Newton&amp;rdquo;, 2020.
-  Z.Liao, R. Couillet, M. Mahoney, &amp;ldquo;A random matrix analysis of random Fourier features: beyond the Gaussian kernel, a precise phase transition, and the corresponding double descent&amp;rdquo;, 2020.
-  Z.Liao, R. Couillet, &amp;ldquo;Inner-product Kernels are Asymptotically Equivalent to Binary Discrete Kernels&amp;rdquo;, 2019.
-  X. Mai, Z.</description>
+      <description>Conferences:   M. Dereziński, F. Liang, Z. Liao, M. W. Mahoney, &amp;ldquo;Precise expressions for random projections: Low-rank approximation and randomized Newton&amp;rdquo;, The 34th Conference on Neural Information Processing Systems (NeurIPS&#39;20), Vancouver, Canada, 2020.
+  Z.Liao, R. Couillet, M. Mahoney, &amp;ldquo;A random matrix analysis of random Fourier features: beyond the Gaussian kernel, a precise phase transition, and the corresponding double descent&amp;rdquo;, The 34th Conference on Neural Information Processing Systems (NeurIPS&#39;20), Vancouver, Canada, 2020.</description>
     </item>
     
   </channel>
