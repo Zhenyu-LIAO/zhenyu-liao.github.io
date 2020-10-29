@@ -6,11 +6,7 @@
     <description>Recent content in Home on Zhenyu Liao&#39;s Page</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Sep 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://zhenyu-liao.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 01 Sep 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://zhenyu-liao.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>EUSIPCO&#39;18 tutorial</title>
       <link>https://zhenyu-liao.github.io/posts/eusipco18/</link>
@@ -87,7 +83,7 @@ The slides are available here.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zhenyu-liao.github.io/publications/</guid>
-      <description>Conferences:   Z.Liao, R. Couillet, M. W. Mahoney, &amp;ldquo;A random matrix analysis of random Fourier features: beyond the Gaussian kernel, a precise phase transition, and the corresponding double descent&amp;rdquo;, The 34th Conference on Neural Information Processing Systems (NeurIPS&#39;20), Vancouver, Canada, 2020.
+      <description>Conferences:   Z.Liao, R. Couillet, M. W. Mahoney, &amp;ldquo;A random matrix analysis of random Fourier features: beyond the Gaussian kernel, a precise phase transition, and the corresponding double descent&amp;rdquo;, The 34th Conference on Neural Information Processing Systems (NeurIPS&#39;20), Vancouver, Canada, 2020. [preprint]
   M. Dereziński, F. Liang, Z. Liao, M. W. Mahoney, &amp;ldquo;Precise expressions for random projections: Low-rank approximation and randomized Newton&amp;rdquo;, The 34th Conference on Neural Information Processing Systems (NeurIPS&#39;20), Vancouver, Canada, 2020.</description>
     </item>
     
