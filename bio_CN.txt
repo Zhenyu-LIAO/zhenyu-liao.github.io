@@ -1,5 +1,5 @@
 廖振宇，于法国巴黎萨克雷大学获数学与计算机博士学位，后在美国加州大学伯克利分校统计系和ICSI从事博士后研究工作，2021年起至今在华中科技大学电信学院工作，任副研究员。
-主要研究方向是机器学习理论与应用、高维统计和随机矩阵理论，成果发表在ICML、NeurIPS、ICLR、COLT、IEEE汇刊和AAP等机器学习和数据处理的会议与期刊，合著专著Random Matrix Methods for Machine Learning。
+主要研究方向是人工智能数理基础、高维统计和随机矩阵理论，成果发表在ICML、NeurIPS、ICLR、COLT、SIGMOD、IEEE汇刊和AAP等机器学习和数据处理的会议与期刊30余篇，合著专著Random Matrix Methods for Machine Learning。
 任ICML、NeurIPS、ICLR、AISTATS和IJCNN等会议的领域主席和Statistics and Computing期刊编委。
 
 受邀任加拿大CRM-Simons访问教授、法国自然科学基金ANR-CIMI访问教授。
