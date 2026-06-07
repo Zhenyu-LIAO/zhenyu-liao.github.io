@@ -1,0 +1,77 @@
+/* --------------------------------------------------
+   Custom layout refinements for Zhenyu Liao's homepage
+   -------------------------------------------------- */
+
+/* Keep the main body text visually justified while leaving
+   navigation, headers, code blocks, and tables unaffected. */
+main.content {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
+
+main.content p,
+main.content li {
+  text-align: justify;
+}
+
+main.content h1,
+main.content h2,
+main.content h3,
+main.content h4,
+main.content h5,
+main.content h6,
+main.content pre,
+main.content code,
+main.content table {
+  text-align: left;
+}
+
+/* Publications page: make dense bibliography-style lists more compact. */
+main.publications-page {
+  font-size: 0.96em;
+}
+
+main.publications-page h3 {
+  font-size: 1.08em;
+  margin-top: 1.05em;
+  margin-bottom: 0.35em;
+}
+
+main.publications-page ol,
+main.publications-page ul {
+  margin-top: 0.35em;
+  margin-bottom: 0.65em;
+  padding-left: 1.55em;
+}
+
+main.publications-page li {
+  line-height: 1.32;
+  margin-top: 0.28em;
+  margin-bottom: 0.28em;
+}
+
+main.publications-page li p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Make secondary information less visually dominant: venues, awards,
+   and resource links such as preprint/poster/slides/code. */
+main.publications-page li em {
+  font-size: 0.93em;
+}
+
+main.publications-page li font,
+main.publications-page li small {
+  font-size: 0.92em;
+}
+
+main.publications-page li a:not(:first-of-type) {
+  font-size: 0.92em;
+}
+
+main.publications-page hr {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
