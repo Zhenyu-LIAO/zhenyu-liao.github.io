@@ -1,8 +1,15 @@
 /* --------------------------------------------------
-   Custom layout refinements
+   Custom layout refinements for Zhenyu Liao's homepage
    -------------------------------------------------- */
 
-/* Global text justification for the visible page body. */
+/*
+   The hugo-xmin theme wraps ordinary single pages in <main>, but its
+   Home page (_index.md) is rendered by list.html and .Content is placed
+   directly under <body>. Therefore we style both <main> and the direct
+   content children of <body>.
+*/
+
+/* General page body on single pages. */
 main {
   text-align: justify;
   text-justify: inter-word;
@@ -11,6 +18,21 @@ main {
 
 main p,
 main li {
+  text-align: justify;
+}
+
+/* Home page and other list-like pages whose content is not inside <main>. */
+body > p,
+body > ul,
+body > ol,
+body > blockquote {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
+
+body > ul li,
+body > ol li {
   text-align: justify;
 }
 
@@ -24,8 +46,25 @@ main h6,
 main pre,
 main code,
 main table,
-main img {
+main img,
+body > h1,
+body > h2,
+body > h3,
+body > h4,
+body > h5,
+body > h6,
+body > pre,
+body > table,
+body > img {
   text-align: left;
+}
+
+/* Keep navigation and footer centered as in the original theme. */
+nav,
+.menu,
+.menu li,
+footer {
+  text-align: center;
 }
 
 /* Publications page only. The class is added by head_custom.html. */
@@ -58,7 +97,8 @@ body.publications-page main li p {
   margin-bottom: 0;
 }
 
-/* Make secondary information less visually dominant. */
+/* Make secondary information less visually dominant: venues, awards,
+   and resource links such as preprint/poster/slides/code. */
 body.publications-page main li em {
   font-size: 0.93em;
 }
