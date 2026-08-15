@@ -116,3 +116,33 @@ body.publications-page main hr {
   margin-top: 0.8em;
   margin-bottom: 0.8em;
 }
+
+/* Grants page: compact numbered entries with quiet supporting metadata. */
+.grant-list {
+  margin-top: 0.4em;
+  margin-bottom: 1.2em;
+  padding-left: 1.8em;
+}
+
+.grant-list li {
+  margin-bottom: 0.9em;
+  padding-left: 0.2em;
+  text-align: left;
+}
+
+.grant-title,
+.grant-meta,
+.grant-people {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.grant-meta,
+.grant-people {
+  font-size: 0.94em;
+  line-height: 1.4;
+}
+
+.grant-meta {
+  color: #555;
+}
